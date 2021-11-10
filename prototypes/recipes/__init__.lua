@@ -1,0 +1,8 @@
+require(path_p_recipes .. "ammo")
+require(path_p_recipes .. "decay")
+require(path_p_recipes .. "fluoride")
+require(path_p_recipes .. "enrichment")
+require(path_p_recipes .. "fuel")
+require(path_p_recipes .. "processing")
+require(path_p_recipes .. "reactor")
+require(path_p_recipes .. "recycle")

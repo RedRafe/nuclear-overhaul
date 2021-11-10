@@ -1,0 +1,12 @@
+{
+  "name": "nuclear-overhaul",
+  "version": "0.1.0",
+  "title": "Nuclear Overhaul",
+  "author": "RedRafe",
+  "dependencies": [
+      "base >= 1.1.0",
+      "? Krastorio2"
+  ],
+  "description": "A new complex way to handle nuclear power similar to real life. New elements are introduced in the process and reactors can explode...!",
+  "factorio_version": "1.1"
+}

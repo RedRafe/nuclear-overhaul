@@ -1,0 +1,7 @@
+- [ ] Introduce new war items/equipments obtained by nuclear waste
+- [ ] Reskin some arts (you can help me!)
+- [ ] Add new elements of the periodic table
+- [ ] Add infinite/dedicate science techs for nuclear
+- [ ] add matter recipes for U an Th of K2 (rewrite code?)
+- [ ] balance power?
+- [ ] turbine stacks to 50
