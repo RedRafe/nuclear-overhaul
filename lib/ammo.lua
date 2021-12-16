@@ -70,7 +70,7 @@ end
 
 -- @ names: Table<String>
 -- @ extension: Table<Extension>
-function nuclear.ammo.addRecipeVariation(names, extensions)
+function addRecipeVariation(names, extensions)
   local recipes = _getRecipeFromName(names)
   for _, recipe in pairs(recipes) do
     for _, extension in pairs(extensions) do
@@ -104,7 +104,7 @@ end
 
 -- @ recipes: Table<String>
 -- @ extensions: Table<Extension>
-function nuclear.ammo.getRecipeNames(recipes, extensions)
+function getRecipeNames(recipes, extensions)
   local names = {}
   for _, recipe in pairs(recipes) do
     table.insert(names, recipe)
@@ -114,3 +114,8 @@ function nuclear.ammo.getRecipeNames(recipes, extensions)
   end
   return names
 end
+
+---------------------------------------------------------------------------
+
+nuclear.ammo.addRecipeVariation = addRecipeVariation
+nuclear.ammo.getRecipeNames = getRecipeNames

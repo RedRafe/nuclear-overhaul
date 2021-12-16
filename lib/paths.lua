@@ -30,5 +30,3 @@ path_compatibility_scripts              = path_mod .. "compatibility/"
 --path_data_updates                       = path_compatibility_scripts .. "data-updates/"
 --path_data_final_fixes                   = path_compatibility_scripts .. "data-final-fixes/"
 ----------------------------------------------------------------------------------------------
-
-print("heyyyy")

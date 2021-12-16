@@ -1,4 +1,4 @@
-nuclear.technology = {}
+if not nuclear.technology then nuclear.technology = {} end
 
 -- @ recipes: Table<String>
 -- return Table<Effect>
@@ -54,7 +54,7 @@ end
 -- @ tableIn1: table
 -- @ tableIn2: table
 -- return table
-function _mergeTable(tableIn1, tableIn2)
+local function _mergeTable(tableIn1, tableIn2)
   for k,v in pairs(tableIn2) do 
     tableIn1[k] = v 
   end
@@ -65,7 +65,7 @@ end
 -- @ tableIn1: table
 -- @ tableIn2: table
 -- return table
-function _concatTable(tableIn1, tableIn2)
+local function _concatTable(tableIn1, tableIn2)
   local concat = {}
   local tableIn3 = _filterTable(tableIn2, tableIn1)
   for _, v in pairs(tableIn1) do
@@ -79,13 +79,13 @@ end
 
 -- @ technologyName: String
 -- @ recipes: Table<String>
-function nuclear.technology.setUnlockEffects(technologyName, recipes)
+local function setUnlockEffects(technologyName, recipes)
   data.raw.technology[technologyName].effects = _tableToEffects(recipes)
 end
 
 -- @ technologyName: String
 -- @ recipes: Table<String>
-function nuclear.technology.addUnlockEffects(technologyName, recipes)
+local function addUnlockEffects(technologyName, recipes)
   local effects = data.raw.technology[technologyName].effects
   effects = _effectsToTable(effects)
   effects = _concatTable(effects, recipes)
@@ -95,7 +95,7 @@ end
 
 -- @ technologyName: String
 -- @ recipes: Table<String>
-function nuclear.technology.removeUnlockEffects(technologyName, recipes)
+local function removeUnlockEffects(technologyName, recipes)
   local effects = data.raw.technology[technologyName].effects
   effects = _effectsToTable(effects)
   effects = _filterTable(effects, recipes)
@@ -105,13 +105,13 @@ end
 
 -- @ technologyName: String
 -- @ technologies: Table<String>
-function nuclear.technology.setPrerequisite(technologyName, technologies)
+local function setPrerequisite(technologyName, technologies)
   data.raw.technology[technologyName].prerequisites = technologies
 end
 
 -- @ technologyName: String
 -- @ technologies: Table<String>
-function nuclear.technology.addPrerequisite(technologyName, technologies)
+local function addPrerequisite(technologyName, technologies)
   local prerequisites = data.raw.technology[technologyName].prerequisites
   prerequisites = _concatTable(prerequisites, technologies)
   data.raw.technology[technologyName].prerequisites = prerequisites
@@ -119,7 +119,7 @@ end
 
 -- @ technologyName: String
 -- @ technologies: Table<String>
-function nuclear.technology.removePrerequisite(technologyName, technologies)
+local function removePrerequisite(technologyName, technologies)
   local prerequisites = data.raw.technology[technologyName].prerequisites
   prerequisites = _filterTable(prerequisites, technologies)
   data.raw.technology[technologyName].prerequisites = prerequisites
@@ -127,6 +127,16 @@ end
   
 -- @ technologyName: String
 -- @ value: int
-function nuclear.technology.setCount(technologyName, value)
+local function setCount(technologyName, value)
   data.raw.technology[technologyName].unit.count = value
 end
+
+---------------------------------------------------------------------------
+
+nuclear.technology.setUnlockEffects = setUnlockEffects
+nuclear.technology.addUnlockEffects = addUnlockEffects
+nuclear.technology.removeUnlockEffects = removeUnlockEffects
+nuclear.technology.setPrerequisite = setPrerequisite
+nuclear.technology.addPrerequisite = addPrerequisite
+nuclear.technology.removePrerequisite = removePrerequisite
+nuclear.technology.setCount = setCount
