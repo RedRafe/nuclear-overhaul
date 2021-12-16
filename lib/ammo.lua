@@ -1,6 +1,8 @@
-local Utils = require(path_public_lib .. "utils")
+if not nuclear.ammo then nuclear.ammo = {} end
 
-nuclear.ammo = {}
+local Utils = require(path_lib .. "utils")
+
+
 -- nuclear.ammo.U235_TO_U238 = 5
 
 -- @ ingrenients: Table<Ingrendient>

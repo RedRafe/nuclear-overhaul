@@ -1,3 +1,5 @@
+nuclear.debug.log("--reactor")
+
 --[[
     Table:  reactor values and comparison
     +-------+-----------+-----------+-----------+-----------+-----------+
@@ -10,7 +12,7 @@
 ]]
 
 --FIXME: phw-reactor heated pipes not rendering correctly (just visual bug)
-require "util"
+--require "util"
 local entities = {}
 local heated_pipes_tint = {0.5, 0.4, 0.3, 0.5}
 local heat_glow_tint = {1, 1, 1, 1}

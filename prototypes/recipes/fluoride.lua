@@ -1,3 +1,5 @@
+nuclear.debug.log("--fluoride")
+
 data:extend({
   {
     type = "recipe",

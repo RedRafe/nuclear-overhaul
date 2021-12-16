@@ -1,6 +1,6 @@
-nuclear.stage = "data-updates"
+nuclear.debug.log("-- --updates")
+---------------------------------------------------------------------------
+
+require(path_compatibility_scripts .. "Krastorio2/data-updates")
 
 ---------------------------------------------------------------------------
--- -- -- COMPATIBILITY SCRIPTS
----------------------------------------------------------------------------
-require(path_compatibility_scripts .. "Krastorio2/data-updates")

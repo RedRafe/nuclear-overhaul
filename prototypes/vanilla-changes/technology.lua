@@ -1,3 +1,5 @@
+nuclear.debug.log("--technology")
+
 -- -- Remove techs
 data.raw["technology"]["nuclear-fuel-reprocessing"] = nil
 

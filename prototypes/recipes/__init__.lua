@@ -1,3 +1,5 @@
+nuclear.debug.log("Init recipes...")
+
 require(path_p_recipes .. "ammo")
 require(path_p_recipes .. "decay")
 require(path_p_recipes .. "fluoride")

@@ -1,3 +1,6 @@
+nuclear.debug.log("--element")
+
+
 data:extend({
   -- -- Thorium [90]
   -- Th-232

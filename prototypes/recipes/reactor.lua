@@ -1,3 +1,5 @@
+nuclear.debug.log("--reactor")
+
 --[[
   Table: Capital cost for nuclear power plants
   +-------+---------+-----------+

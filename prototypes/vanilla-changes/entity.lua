@@ -1,3 +1,5 @@
+nuclear.debug.log("--entity")
+
 -- Heat pipe
 data.raw["heat-pipe"]["heat-pipe"].max_health = 100
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.specific_heat = "6MJ"

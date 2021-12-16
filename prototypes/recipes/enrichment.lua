@@ -1,3 +1,5 @@
+nuclear.debug.log("--enrichment")
+
 -- Thorium enrichment process (not enabled)
 data:extend({
   {

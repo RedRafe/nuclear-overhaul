@@ -1,3 +1,5 @@
+nuclear.debug.log("--fuel")
+
 data:extend({
   -- Uranium MOX
   {

@@ -1,3 +1,5 @@
+nuclear.debug.log("--yellowcake")
+
 -- Yellowcake (Uranium powder)
 data:extend({
   {

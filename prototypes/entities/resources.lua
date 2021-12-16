@@ -1,3 +1,5 @@
+nuclear.debug.log("--resources")
+
 local resource_autoplace = require("__core__/lualib/resource-autoplace")
 
 -- Add Thorium ore
@@ -22,8 +24,7 @@ data:extend(
 		},
 		collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
 		selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
-		autoplace = resource_autoplace.resource_autoplace_settings
-		{
+		autoplace = resource_autoplace.resource_autoplace_settings({
 			name = "thorium-ore",
 			order = "d",
 			base_density = 1.0,
@@ -34,7 +35,7 @@ data:extend(
 			--regular_blob_amplitude_multiplier = 1,
 			regular_rq_factor_multiplier = 1
 			--candidate_spot_count = 22
-		},
+		}),
 		stage_counts = {10000, 6330, 3670, 1930, 870, 270, 100, 50},
     stages =
     {

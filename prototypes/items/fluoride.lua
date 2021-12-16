@@ -1,3 +1,6 @@
+nuclear.debug.log("--fluoride")
+
+
 -- Fluoride
 data:extend({
   {

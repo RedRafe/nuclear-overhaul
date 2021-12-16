@@ -1,3 +1,5 @@
+nuclear.debug.log("--thorium")
+
 -- Thorium ore
 data:extend({
   {

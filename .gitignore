@@ -1,6 +1,7 @@
 changelog_template.txt
 .vscode/
 scripts/
+TODO_list.txt
 
 # Compiled Lua sources
 luac.out

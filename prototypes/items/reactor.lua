@@ -1,3 +1,6 @@
+nuclear.debug.log("--reactor")
+
+
 data:extend({
   -- LW Reactor Reactor
   {

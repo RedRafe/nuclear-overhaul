@@ -1,4 +1,6 @@
-local Utils = require(path_public_lib .. "utils")
+nuclear.debug.log("--recipe")
+
+local Utils = require(path_lib .. "utils")
 
 -- Uranium ore processing 1 in chem plants (Yellowcake)
 data.raw["recipe"]["uranium-processing"] = 

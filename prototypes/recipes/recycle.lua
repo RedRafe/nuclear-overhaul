@@ -1,3 +1,5 @@
+nuclear.debug.log("--recycle")
+
 data:extend({
   -- Recycle used Uranium MOX
   {

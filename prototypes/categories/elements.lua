@@ -1,3 +1,5 @@
+nuclear.debug.log("--elements")
+
 data:extend({
   {
     type = "item-subgroup",

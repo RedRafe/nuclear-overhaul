@@ -1,3 +1,5 @@
+nuclear.debug.log("--resource")
+
 -- Disable mining fluids requirements for uranium mining
 local uo = data.raw["resource"]["uranium-ore"]
 uo.minable =

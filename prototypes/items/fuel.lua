@@ -1,3 +1,6 @@
+nuclear.debug.log("--fuel")
+
+
 --[[
   +---------+---------+-----------+
   | Reactor | Base(GJ)| Converted |

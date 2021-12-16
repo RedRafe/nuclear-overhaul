@@ -119,8 +119,8 @@ if mods["Krastorio2"] then
   })
 
   for _, item in pairs(matter_items) do
-    data:extend({matter_to_item(item)})
-    data:extend({item_to_matter(item)})
+    data:extend({ matter_to_item(item) })
+    data:extend({ item_to_matter(item) })
   end
 
 end

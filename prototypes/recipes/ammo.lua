@@ -1,3 +1,5 @@
+nuclear.debug.log("--ammo")
+
 nuclear.ammo.U235_TO_U238 = 5
 nuclear.ammo.extensions = {
   ["uranium-236"] = {

@@ -1,3 +1,5 @@
+nuclear.debug.log("--technology")
+
 data:extend({
   -- Fluoride processing
   {

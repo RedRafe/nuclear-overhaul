@@ -1,3 +1,5 @@
+nuclear.debug.log("--decay")
+
 local HF = 100
 local MF = 20
 local LF = 2

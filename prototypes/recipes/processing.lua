@@ -1,3 +1,5 @@
+nuclear.debug.log("--processing")
+
 data:extend({
   {
     type = "recipe",
