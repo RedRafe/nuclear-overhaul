@@ -16,7 +16,7 @@ data:extend({
   {
     type = "item",
     name = "uranium-mox",
-    icon = path_g_icons .. "uranium-mox.png",
+    icon = no_path_g_icons .. "uranium-mox.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
@@ -24,7 +24,7 @@ data:extend({
       {
         {
           size = 64,
-          filename = path_g_icons .. "uranium-mox.png",
+          filename = no_path_g_icons .. "uranium-mox.png",
           scale = 0.25,
           mipmap_count = 4
         },
@@ -49,7 +49,7 @@ data:extend({
   {
     type = "item",
     name = "plutonium-mox",
-    icon = path_g_icons .. "plutonium-mox.png",
+    icon = no_path_g_icons .. "plutonium-mox.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
@@ -57,7 +57,7 @@ data:extend({
       {
         {
           size = 64,
-          filename = path_g_icons .. "plutonium-mox.png",
+          filename = no_path_g_icons .. "plutonium-mox.png",
           scale = 0.25,
           mipmap_count = 4
         },
@@ -82,7 +82,7 @@ data:extend({
   {
     type = "item",
     name = "thorium-mox",
-    icon = path_g_icons .. "thorium-mox.png",
+    icon = no_path_g_icons .. "thorium-mox.png",
     icon_size = 64, icon_mipmaps = 4,
     pictures =
     {
@@ -90,7 +90,7 @@ data:extend({
       {
         {
           size = 64,
-          filename = path_g_icons .. "thorium-mox.png",
+          filename = no_path_g_icons .. "thorium-mox.png",
           scale = 0.25,
           mipmap_count = 4
         },
@@ -115,7 +115,7 @@ data:extend({
   {
     type = "item",
     name = "used-uranium-mox",
-    icon = path_g_icons .. "used-uranium-mox.png",
+    icon = no_path_g_icons .. "used-uranium-mox.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
     order = "e[used-mox]-a[u]",
@@ -125,7 +125,7 @@ data:extend({
   {
     type = "item",
     name = "used-plutonium-mox",
-    icon = path_g_icons .. "used-plutonium-mox.png",
+    icon = no_path_g_icons .. "used-plutonium-mox.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
     order = "e[used-mox]-b[pu]",
@@ -135,7 +135,7 @@ data:extend({
   {
     type = "item",
     name = "used-thorium-mox",
-    icon = path_g_icons .. "used-thorium-mox.png",
+    icon = no_path_g_icons .. "used-thorium-mox.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
     order = "e[used-mox]-c[th]",

@@ -8,7 +8,7 @@ data:extend(
 	{
 		type = "resource",
 		name = "thorium-ore",
-		icon = path_g_icons .. "thorium-ore.png",
+		icon = no_path_g_icons .. "thorium-ore.png",
 		icon_size = 64,
 		flags = {"placeable-neutral"},
 		order="a-b-a",
@@ -41,7 +41,7 @@ data:extend(
     {
       sheet =
       {
-        filename = path_g_entities .. "thorium-ore/thorium-ore.png",
+        filename = no_path_g_entities .. "thorium-ore/thorium-ore.png",
         priority = "extra-high",
         width = 64,
         height = 64,
@@ -49,7 +49,7 @@ data:extend(
         variation_count = 8,
         hr_version =
         {
-          filename = path_g_entities .. "thorium-ore/hr-thorium-ore.png",
+          filename = no_path_g_entities .. "thorium-ore/hr-thorium-ore.png",
           priority = "extra-high",
           width = 128,
           height = 128,
@@ -63,7 +63,7 @@ data:extend(
     {
       sheet =
       {
-        filename = path_g_entities .. "thorium-ore/thorium-ore-glow.png",
+        filename = no_path_g_entities .. "thorium-ore/thorium-ore-glow.png",
         priority = "extra-high",
         width = 64,
         height = 64,
@@ -73,7 +73,7 @@ data:extend(
         flags = {"light"},
         hr_version =
         {
-          filename = path_g_entities .. "thorium-ore/hr-thorium-ore-glow.png",
+          filename = no_path_g_entities .. "thorium-ore/hr-thorium-ore-glow.png",
           priority = "extra-high",
           width = 128,
           height = 128,

@@ -33,7 +33,7 @@ data:extend({
     enabled = false,
     category = "centrifuging",
     ingredients = {{"thorium-ore", 10}},
-    icon = path_g_icons .. "thorium-processing.png",
+    icon = no_path_g_icons .. "thorium-processing.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
     order = "a[processing]-b[thorium-processing]",

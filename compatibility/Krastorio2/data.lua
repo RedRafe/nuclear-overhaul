@@ -9,7 +9,7 @@ local function item_to_matter(item)
     allow_as_intermediate = false,
     icons =
     {
-      { icon = path_g_others .. "compatibility/Krastorio2/" .. item.item_name .. "-to-matter.png", icon_size = 64, icon_mipmaps = 1 }
+      { icon = no_path_g_others .. "compatibility/Krastorio2/" .. item.item_name .. "-to-matter.png", icon_size = 64, icon_mipmaps = 1 }
     },
     energy_required = item.energy_required,
     enabled = false,
@@ -41,7 +41,7 @@ local function matter_to_item(item)
     allow_as_intermediate = false,
     icons =
     {
-      { icon = path_g_others .. "compatibility/Krastorio2/matter-to-" .. item.item_name .. ".png", icon_size = 64, icon_mipmaps = 1 }
+      { icon = no_path_g_others .. "compatibility/Krastorio2/matter-to-" .. item.item_name .. ".png", icon_size = 64, icon_mipmaps = 1 }
     },
     energy_required = item.energy_required,
     enabled = false,
@@ -98,7 +98,7 @@ if mods["Krastorio2"] then
       type = "technology",
       name = "kr-matter-thorium-processing",
       localised_name = "Thorium conversion",
-      icon = path_g_others .. "compatibility/Krastorio2/matter-thorium.png",
+      icon = no_path_g_others .. "compatibility/Krastorio2/matter-thorium.png",
       icon_size = 256, 
       icon_mipmaps = 1,
       effects = _tableToEffects({"thorium-ore-to-matter", "thorium-232-to-matter", "matter-to-thorium-ore", "matter-to-thorium-232"}),

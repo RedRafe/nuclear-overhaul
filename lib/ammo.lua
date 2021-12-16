@@ -1,6 +1,6 @@
 if not nuclear.ammo then nuclear.ammo = {} end
 
-local Utils = require(path_lib .. "utils")
+local Utils = require(no_path_lib .. "utils")
 
 
 -- nuclear.ammo.U235_TO_U238 = 5

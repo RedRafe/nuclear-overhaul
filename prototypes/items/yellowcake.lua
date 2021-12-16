@@ -5,7 +5,7 @@ data:extend({
   {
 		type = "item",
 		name = "yellowcake",
-		icon = path_g_icons .. "uranium-powder.png",
+		icon = no_path_g_icons .. "uranium-powder.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
 		pictures =
@@ -15,7 +15,7 @@ data:extend({
 				{
 					{
 						size = 64,
-						filename = path_g_icons .. "uranium-powder.png",
+						filename = no_path_g_icons .. "uranium-powder.png",
 						scale = 0.25,
 						mipmap_count = 4
 					},
@@ -25,7 +25,7 @@ data:extend({
 						blend_mode = "additive",
 						tint = {r = 0.3, g = 0.3, b = 0.3, a = 0.3},
 						size = 64,
-						filename = path_g_icons .. "uranium-powder-light.png",
+						filename = no_path_g_icons .. "uranium-powder-light.png",
 						scale = 0.25,
 						mipmap_count = 4
 					}
@@ -36,7 +36,7 @@ data:extend({
 				{
 					{
 						size = 64,
-						filename = path_g_icons .. "uranium-powder-1.png",
+						filename = no_path_g_icons .. "uranium-powder-1.png",
 						scale = 0.25,
 						mipmap_count = 4
 					},
@@ -46,7 +46,7 @@ data:extend({
 						blend_mode = "additive",
 						tint = {r = 0.3, g = 0.3, b = 0.3, a = 0.3},
 						size = 64,
-						filename = path_g_icons .. "uranium-powder-1-light.png",
+						filename = no_path_g_icons .. "uranium-powder-1-light.png",
 						scale = 0.25,
 						mipmap_count = 4
 					}
@@ -57,7 +57,7 @@ data:extend({
 				{
 					{
 						size = 64,
-						filename = path_g_icons .. "uranium-powder-2.png",
+						filename = no_path_g_icons .. "uranium-powder-2.png",
 						scale = 0.25,
 						mipmap_count = 4
 					},
@@ -67,7 +67,7 @@ data:extend({
 						blend_mode = "additive",
 						tint = {r = 0.3, g = 0.3, b = 0.3, a = 0.3},
 						size = 64,
-						filename = path_g_icons .. "uranium-powder-2-light.png",
+						filename = no_path_g_icons .. "uranium-powder-2-light.png",
 						scale = 0.25,
 						mipmap_count = 4
 					}

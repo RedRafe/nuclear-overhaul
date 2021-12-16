@@ -23,7 +23,7 @@ if mods["Krastorio2"] then
         name = "sulfuric-acid",
         amount = 5}
     },
-    icon = path_g_icons .. "uranium-powder.png",
+    icon = no_path_g_icons .. "uranium-powder.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-material",
     order = "k[uranium-processing-1]",
@@ -59,7 +59,7 @@ if mods["Krastorio2"] then
     enabled = false,
     category = "centrifuging",
     ingredients = {{"used-uranium-mox", 1}},
-    icon = path_g_icons .. "nuclear-fuel-reprocessing-1.png",
+    icon = no_path_g_icons .. "nuclear-fuel-reprocessing-1.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
     order = "f[reprocessing]-a[rep-uranium-mox]",

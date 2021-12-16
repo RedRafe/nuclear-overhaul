@@ -10,7 +10,7 @@ data.raw["technology"]["uranium-processing"] =
   type = "technology",
   name = "uranium-processing",
   icon_size = 64, icon_mipmaps = 4,
-  icon = path_g_icons .. "uranium-powder.png",
+  icon = no_path_g_icons .. "uranium-powder.png",
   effects =
   {
     {

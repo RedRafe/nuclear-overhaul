@@ -1,6 +1,6 @@
 nuclear.debug.log("--recipe")
 
-local Utils = require(path_lib .. "utils")
+local Utils = require(no_path_lib .. "utils")
 
 -- Uranium ore processing 1 in chem plants (Yellowcake)
 data.raw["recipe"]["uranium-processing"] = 
@@ -21,7 +21,7 @@ data.raw["recipe"]["uranium-processing"] =
       name = "sulfuric-acid",
       amount = 5}
   },
-  icon = path_g_icons .. "uranium-powder.png",
+  icon = no_path_g_icons .. "uranium-powder.png",
   icon_size = 64, icon_mipmaps = 4,
   subgroup = "raw-material",
   order = "k[uranium-processing-1]",

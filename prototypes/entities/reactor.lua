@@ -82,7 +82,7 @@ data:extend({
   {
     type = "reactor",
     name = "lw-reactor",
-    icon  = path_g_icons .. "lw-reactor.png",
+    icon  = no_path_g_icons .. "lw-reactor.png",
     icon_size = 64, icon_mipmaps = 1,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "lw-reactor"},
@@ -111,13 +111,13 @@ data:extend({
 
     lower_layer_picture =
     {
-      filename = path_g_entities .. "lw-reactor/reactor-pipes.png",
+      filename = no_path_g_entities .. "lw-reactor/reactor-pipes.png",
       width = 156,
       height = 156,
       shift = util.by_pixel(-2, -4),
       hr_version =
       {
-        filename = path_g_entities .. "lw-reactor/hr-reactor-pipes.png",
+        filename = no_path_g_entities .. "lw-reactor/hr-reactor-pipes.png",
         width = 320,
         height = 316,
         scale = 0.5,
@@ -126,13 +126,13 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
     {
-      filename = path_g_entities .. "lw-reactor/reactor-pipes-heated.png",
+      filename = no_path_g_entities .. "lw-reactor/reactor-pipes-heated.png",
       width = 156,
       height = 156,
       shift = util.by_pixel(-3, -4),
       hr_version =
       {
-        filename = path_g_entities .. "lw-reactor/hr-reactor-pipes-heated.png",
+        filename = no_path_g_entities .. "lw-reactor/hr-reactor-pipes-heated.png",
         width = 320,
         height = 316,
         scale = 0.5,
@@ -145,13 +145,13 @@ data:extend({
       layers =
       {
         {
-          filename = path_g_entities .. "lw-reactor/reactor.png",
+          filename = no_path_g_entities .. "lw-reactor/reactor.png",
           width = 154,
           height = 158,
           shift = util.by_pixel(-6, -6),
           hr_version =
           {
-            filename = path_g_entities .. "lw-reactor/hr-reactor.png",
+            filename = no_path_g_entities .. "lw-reactor/hr-reactor.png",
             width = 302,
             height = 318,
             scale = 0.5,
@@ -159,14 +159,14 @@ data:extend({
           }
         },
         {
-          filename = path_g_entities .. "lw-reactor/reactor-shadow.png",
+          filename = no_path_g_entities .. "lw-reactor/reactor-shadow.png",
           width = 263,
           height = 162,
           shift = { 1.625 , 0 },
           draw_as_shadow = true,
           hr_version =
           {
-            filename = path_g_entities .. "lw-reactor/hr-reactor-shadow.png",
+            filename = no_path_g_entities .. "lw-reactor/hr-reactor-shadow.png",
             width = 525,
             height = 323,
             scale = 0.5,
@@ -179,7 +179,7 @@ data:extend({
 
     working_light_picture =
     {
-      filename = path_g_entities .. "lw-reactor/reactor-lights-color.png",
+      filename = no_path_g_entities .. "lw-reactor/reactor-lights-color.png",
       blend_mode = "additive",
       draw_as_glow = true,
       width = 160,
@@ -187,7 +187,7 @@ data:extend({
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
-        filename = path_g_entities .. "lw-reactor/hr-reactor-lights-color.png",
+        filename = no_path_g_entities .. "lw-reactor/hr-reactor-lights-color.png",
         blend_mode = "additive",
         draw_as_glow = true,
         width = 320,
@@ -257,13 +257,13 @@ data:extend({
 
       heat_picture = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "lw-reactor/reactor-heated.png",
+        filename = no_path_g_entities .. "lw-reactor/reactor-heated.png",
         width = 108,
         height = 128,
         shift = util.by_pixel(1, -7),
         hr_version =
         {
-          filename = path_g_entities .. "lw-reactor/hr-reactor-heated.png",
+          filename = no_path_g_entities .. "lw-reactor/hr-reactor-heated.png",
           width = 216,
           height = 256,
           scale = 0.5,
@@ -276,13 +276,13 @@ data:extend({
     {
       sheet =
       {
-        filename = path_g_entities .. "lw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches.png",
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = path_g_entities .. "lw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -295,14 +295,14 @@ data:extend({
     {
       sheet =
       {
-        filename = path_g_entities .. "lw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches.png",
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = path_g_entities .. "lw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -316,13 +316,13 @@ data:extend({
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "lw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches-heated.png",
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = path_g_entities .. "lw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches-heated.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -335,14 +335,14 @@ data:extend({
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "lw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches-heated.png",
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = path_g_entities .. "lw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches-heated.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -367,7 +367,7 @@ data:extend({
   {
     type = "reactor",
     name = "phw-reactor",
-    icon  = path_g_icons .. "phw-reactor.png",
+    icon  = no_path_g_icons .. "phw-reactor.png",
     icon_size = 64, icon_mipmaps = 1,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "phw-reactor"},
@@ -396,14 +396,14 @@ data:extend({
 
     lower_layer_picture =
     {
-      filename = path_g_entities .. "phw-reactor/reactor-pipes.png",
+      filename = no_path_g_entities .. "phw-reactor/reactor-pipes.png",
       width = 94,
       height = 94,
       --scale = 0.6,
       shift = util.by_pixel(-2, -4),
       hr_version =
       {
-        filename = path_g_entities .. "phw-reactor/hr-reactor-pipes.png",
+        filename = no_path_g_entities .. "phw-reactor/hr-reactor-pipes.png",
         width = 190,
         height = 190,
         scale = 0.5, --0.3
@@ -412,14 +412,14 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
     {
-      filename = path_g_entities .. "phw-reactor/reactor-pipes-heated.png",
+      filename = no_path_g_entities .. "phw-reactor/reactor-pipes-heated.png",
       width = 94,
       height = 94,
       --scale = 0.6,
       shift = util.by_pixel(-3, -4),
       hr_version =
       {
-        filename = path_g_entities .. "phw-reactor/hr-reactor-pipes-heated.png",
+        filename = no_path_g_entities .. "phw-reactor/hr-reactor-pipes-heated.png",
         width = 190,
         height = 190,
         scale = 0.5, --0.3
@@ -432,14 +432,14 @@ data:extend({
       layers =
       {
         {
-          filename = path_g_entities .. "phw-reactor/reactor.png",
+          filename = no_path_g_entities .. "phw-reactor/reactor.png",
           width = 154,
           height = 158,
           scale = 0.6,
           shift = util.by_pixel(-6, -6),
           hr_version =
           {
-            filename = path_g_entities .. "phw-reactor/hr-reactor.png",
+            filename = no_path_g_entities .. "phw-reactor/hr-reactor.png",
             width = 302,
             height = 318,
             scale = 0.3,
@@ -447,7 +447,7 @@ data:extend({
           }
         },
         {
-          filename = path_g_entities .. "phw-reactor/reactor-shadow.png",
+          filename = no_path_g_entities .. "phw-reactor/reactor-shadow.png",
           width = 263,
           height = 162,
           scale = 0.6,
@@ -455,7 +455,7 @@ data:extend({
           draw_as_shadow = true,
           hr_version =
           {
-            filename = path_g_entities .. "phw-reactor/hr-reactor-shadow.png",
+            filename = no_path_g_entities .. "phw-reactor/hr-reactor-shadow.png",
             width = 525,
             height = 323,
             scale = 0.3,
@@ -468,7 +468,7 @@ data:extend({
 
     working_light_picture =
     {
-      filename = path_g_entities .. "phw-reactor/reactor-lights-color.png",
+      filename = no_path_g_entities .. "phw-reactor/reactor-lights-color.png",
       blend_mode = "additive",
       draw_as_glow = true,
       width = 160,
@@ -477,7 +477,7 @@ data:extend({
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
-        filename = path_g_entities .. "phw-reactor/hr-reactor-lights-color.png",
+        filename = no_path_g_entities .. "phw-reactor/hr-reactor-lights-color.png",
         blend_mode = "additive",
         draw_as_glow = true,
         width = 320,
@@ -531,14 +531,14 @@ data:extend({
 
       heat_picture = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "phw-reactor/reactor-heated.png",
+        filename = no_path_g_entities .. "phw-reactor/reactor-heated.png",
         width = 108,
         height = 128,
         scale = 0.6,
         shift = util.by_pixel(-2, -7), --util.by_pixel(1, -7)
         hr_version =
         {
-          filename = path_g_entities .. "phw-reactor/hr-reactor-heated.png",
+          filename = no_path_g_entities .. "phw-reactor/hr-reactor-heated.png",
           width = 216,
           height = 256,
           scale = 0.3,
@@ -551,14 +551,14 @@ data:extend({
     {
       sheet =
       {
-        filename = path_g_entities .. "phw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches.png",
         width = 32,
         height = 32,
         variation_count = 12,
         --scale = 0.6,
         hr_version =
         {
-          filename = path_g_entities .. "phw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -571,7 +571,7 @@ data:extend({
     {
       sheet =
       {
-        filename = path_g_entities .. "phw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches.png",
         width = 32,
         height = 32,
         variation_count = 12,
@@ -579,7 +579,7 @@ data:extend({
         --scale = 0.6,
         hr_version =
         {
-          filename = path_g_entities .. "phw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -593,14 +593,14 @@ data:extend({
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "phw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches-heated.png",
         width = 32,
         height = 32,
         variation_count = 12,
         --scale = 0.6,
         hr_version =
         {
-          filename = path_g_entities .. "phw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches-heated.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -613,7 +613,7 @@ data:extend({
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "phw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches-heated.png",
         width = 32,
         height = 32,
         variation_count = 12,
@@ -621,7 +621,7 @@ data:extend({
         --scale = 0.6,
         hr_version =
         {
-          filename = path_g_entities .. "phw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches-heated.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -646,7 +646,7 @@ data:extend({
   {
     type = "reactor",
     name = "lft-reactor",
-    icon  = path_g_icons .. "lft-reactor.png",
+    icon  = no_path_g_icons .. "lft-reactor.png",
     icon_size = 64, icon_mipmaps = 1,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "lft-reactor"},
@@ -675,13 +675,13 @@ data:extend({
 
     lower_layer_picture =
     {
-      filename = path_g_entities .. "lft-reactor/reactor-pipes.png",
+      filename = no_path_g_entities .. "lft-reactor/reactor-pipes.png",
       width = 156,
       height = 156,
       shift = util.by_pixel(-2, -4),
       hr_version =
       {
-        filename = path_g_entities .. "lft-reactor/hr-reactor-pipes.png",
+        filename = no_path_g_entities .. "lft-reactor/hr-reactor-pipes.png",
         width = 320,
         height = 316,
         scale = 0.5,
@@ -690,13 +690,13 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
     {
-      filename = path_g_entities .. "lft-reactor/reactor-pipes-heated.png",
+      filename = no_path_g_entities .. "lft-reactor/reactor-pipes-heated.png",
       width = 156,
       height = 156,
       shift = util.by_pixel(-3, -4),
       hr_version =
       {
-        filename = path_g_entities .. "lft-reactor/hr-reactor-pipes-heated.png",
+        filename = no_path_g_entities .. "lft-reactor/hr-reactor-pipes-heated.png",
         width = 320,
         height = 316,
         scale = 0.5,
@@ -709,13 +709,13 @@ data:extend({
       layers =
       {
         {
-          filename = path_g_entities .. "lft-reactor/reactor.png",
+          filename = no_path_g_entities .. "lft-reactor/reactor.png",
           width = 154,
           height = 158,
           shift = util.by_pixel(-6, -6),
           hr_version =
           {
-            filename = path_g_entities .. "lft-reactor/hr-reactor.png",
+            filename = no_path_g_entities .. "lft-reactor/hr-reactor.png",
             width = 302,
             height = 318,
             scale = 0.5,
@@ -723,14 +723,14 @@ data:extend({
           }
         },
         {
-          filename = path_g_entities .. "lft-reactor/reactor-shadow.png",
+          filename = no_path_g_entities .. "lft-reactor/reactor-shadow.png",
           width = 263,
           height = 162,
           shift = { 1.625 , 0 },
           draw_as_shadow = true,
           hr_version =
           {
-            filename = path_g_entities .. "lft-reactor/hr-reactor-shadow.png",
+            filename = no_path_g_entities .. "lft-reactor/hr-reactor-shadow.png",
             width = 525,
             height = 323,
             scale = 0.5,
@@ -743,7 +743,7 @@ data:extend({
 
     working_light_picture =
     {
-      filename = path_g_entities .. "lft-reactor/reactor-lights-color.png",
+      filename = no_path_g_entities .. "lft-reactor/reactor-lights-color.png",
       blend_mode = "additive",
       draw_as_glow = true,
       width = 160,
@@ -751,7 +751,7 @@ data:extend({
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
-        filename = path_g_entities .. "lft-reactor/hr-reactor-lights-color.png",
+        filename = no_path_g_entities .. "lft-reactor/hr-reactor-lights-color.png",
         blend_mode = "additive",
         draw_as_glow = true,
         width = 320,
@@ -821,13 +821,13 @@ data:extend({
 
       heat_picture = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "lft-reactor/reactor-heated.png",
+        filename = no_path_g_entities .. "lft-reactor/reactor-heated.png",
         width = 108,
         height = 128,
         shift = util.by_pixel(1, -7),
         hr_version =
         {
-          filename = path_g_entities .. "lft-reactor/hr-reactor-heated.png",
+          filename = no_path_g_entities .. "lft-reactor/hr-reactor-heated.png",
           width = 216,
           height = 256,
           scale = 0.5,
@@ -840,13 +840,13 @@ data:extend({
     {
       sheet =
       {
-        filename = path_g_entities .. "lft-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches.png",
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = path_g_entities .. "lft-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -859,14 +859,14 @@ data:extend({
     {
       sheet =
       {
-        filename = path_g_entities .. "lft-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches.png",
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = path_g_entities .. "lft-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -880,13 +880,13 @@ data:extend({
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "lft-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches-heated.png",
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = path_g_entities .. "lft-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches-heated.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -899,14 +899,14 @@ data:extend({
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = path_g_entities .. "lft-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches-heated.png",
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = path_g_entities .. "lft-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches-heated.png",
           width = 64,
           height = 64,
           variation_count = 12,

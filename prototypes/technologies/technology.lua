@@ -6,7 +6,7 @@ data:extend({
     type = "technology",
     name = "fluoride-processing",
     icon_size = 256, icon_mipmaps = 4,
-    icon = path_g_technologies .. "fluoride-processing.png",
+    icon = no_path_g_technologies .. "fluoride-processing.png",
     effects =
     {
       {
@@ -33,7 +33,7 @@ data:extend({
     type = "technology",
     name = "uranium-processing-2",
     icon_size = 256, icon_mipmaps = 1,
-    icon = path_g_technologies .. "uranium-processing-2.png",
+    icon = no_path_g_technologies .. "uranium-processing-2.png",
     effects =
     {
       {
@@ -64,7 +64,7 @@ data:extend({
     type = "technology",
     name = "alpha-decay",
     icon_size = 256, icon_mipmaps = 1,
-    icon = path_g_technologies .. "alpha.png",
+    icon = no_path_g_technologies .. "alpha.png",
     effects =
     {
       {
@@ -104,7 +104,7 @@ data:extend({
     type = "technology",
     name = "beta-decay",
     icon_size = 256, icon_mipmaps = 1,
-    icon = path_g_technologies .. "beta.png",
+    icon = no_path_g_technologies .. "beta.png",
     effects =
     {
       {
@@ -144,7 +144,7 @@ data:extend({
     type = "technology",
     name = "thorium-processing",
     icon_size = 256, icon_mipmaps = 4,
-    icon = path_g_technologies .. "thorium-processing.png",
+    icon = no_path_g_technologies .. "thorium-processing.png",
     effects =
     {
       {
@@ -175,7 +175,7 @@ data:extend({
     type = "technology",
     name = "thorium-enrichment-process",
     icon_size = 256, icon_mipmaps = 4,
-    icon = path_g_technologies .. "thorium-enrichment-process.png",
+    icon = no_path_g_technologies .. "thorium-enrichment-process.png",
     effects =
     {
       {
@@ -204,7 +204,7 @@ data:extend({
     type = "technology",
     name = "advanced-nuclear-power",
     icon_size = 256, icon_mipmaps = 1,
-    icon = path_g_technologies .. "lwr.png",
+    icon = no_path_g_technologies .. "lwr.png",
     effects =
     {
       {
@@ -235,7 +235,7 @@ data:extend({
     type = "technology",
     name = "advanced-nuclear-power-2",
     icon_size = 256, icon_mipmaps = 1,
-    icon = path_g_technologies .. "phwr.png",
+    icon = no_path_g_technologies .. "phwr.png",
     effects =
     {
       {
@@ -267,7 +267,7 @@ data:extend({
     type = "technology",
     name = "advanced-nuclear-power-3",
     icon_size = 256, icon_mipmaps = 1,
-    icon = path_g_technologies .. "lftr.png",
+    icon = no_path_g_technologies .. "lftr.png",
     effects =
     {
       {
@@ -299,7 +299,7 @@ data:extend({
     type = "technology",
     name = "nuclear-fuel-reprocessing-1",
     icon_size = 256, icon_mipmaps = 4,
-    icon = path_g_technologies .. "nuclear-fuel-reprocessing-1.png",
+    icon = no_path_g_technologies .. "nuclear-fuel-reprocessing-1.png",
     effects =
     {
       {
@@ -326,7 +326,7 @@ data:extend({
     type = "technology",
     name = "nuclear-fuel-reprocessing-2",
     icon_size = 256, icon_mipmaps = 4,
-    icon = path_g_technologies .. "nuclear-fuel-reprocessing-2.png",
+    icon = no_path_g_technologies .. "nuclear-fuel-reprocessing-2.png",
     effects =
     {
       {
@@ -354,7 +354,7 @@ data:extend({
     type = "technology",
     name = "nuclear-fuel-reprocessing-3",
     icon_size = 256, icon_mipmaps = 4,
-    icon = path_g_technologies .. "nuclear-fuel-reprocessing-3.png",
+    icon = no_path_g_technologies .. "nuclear-fuel-reprocessing-3.png",
     effects =
     {
       {

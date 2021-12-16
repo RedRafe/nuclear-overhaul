@@ -12,7 +12,7 @@ data:extend({
       {"thorium-232", 40}, 
       {"thorium-233", 5}
     },
-    icon = path_g_icons .. "thorium-enrichment-process.png",
+    icon = no_path_g_icons .. "thorium-enrichment-process.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
     order = "b[enrichment]-b[thorium-enrichment]",
