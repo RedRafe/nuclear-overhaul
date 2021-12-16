@@ -96,7 +96,8 @@ data:extend(
 	{
 		type = "autoplace-control",
 		name = "thorium-ore",
-		order="j-a",
+		localised_name = { "", "[entity=thorium-ore] ", { "autoplace-control-names.thorium-ore" } },
+		order= "j-a",
 		richness = true,
 		category = "resource"
 	},
