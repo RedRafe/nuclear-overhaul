@@ -5,3 +5,9 @@
 - [x] add matter recipes for U an Th of K2 (rewrite code?)
 - [ ] balance power?
 - [x] turbine stacks to 50
+
+TODO list before relese:
+- set debug = false
+- check version number
+- edit changelog
+- edit readme
