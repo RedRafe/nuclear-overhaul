@@ -67,4 +67,16 @@ data:extend({
     default_request_amount = 5,
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "personal-roboport-mk2-equipment",
+    localised_description = {"item-description.personal-roboport-equipment"},
+    icon = "__base__/graphics/icons/personal-roboport-mk2-equipment.png",
+    icon_size = 64, icon_mipmaps = 4,
+    placed_as_equipment_result = "personal-roboport-mk2-equipment",
+    subgroup = "equipment",
+    order = "e[robotics]-b[personal-roboport-mk2-equipment]",
+    default_request_amount = 1,
+    stack_size = 20
+  },
 })

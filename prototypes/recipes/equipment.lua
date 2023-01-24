@@ -75,4 +75,17 @@ data:extend({
     },
     result = "personal-laser-defense-equipment"
   },
+  {
+    type = "recipe",
+    name = "personal-roboport-mk2-equipment",
+    enabled = false,
+    energy_required = 20,
+    ingredients =
+    {
+      {"personal-roboport-equipment", 5},
+      {"processing-unit", 100},
+      {"low-density-structure", 20}
+    },
+    result = "personal-roboport-mk2-equipment"
+  },
 })
