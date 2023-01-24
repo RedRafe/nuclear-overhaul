@@ -34,4 +34,15 @@ data:extend({
     default_request_amount = 5,
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "fusion-reactor-equipment",
+    icon = "__base__/graphics/icons/fusion-reactor-equipment.png",
+    icon_size = 64, icon_mipmaps = 4,
+    placed_as_equipment_result = "fusion-reactor-equipment",
+    subgroup = "equipment",
+    order = "a[energy-source]-b[fusion-reactor]",
+    default_request_amount = 1,
+    stack_size = 20
+  },
 })

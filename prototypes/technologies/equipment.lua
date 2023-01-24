@@ -68,4 +68,32 @@ data:extend({
     },
     order = "g-h"
   },
+  {
+    type = "technology",
+    name = "fusion-reactor-equipment",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/fusion-reactor-equipment.png"),
+    prerequisites = {"utility-science-pack", "power-armor", "military-science-pack"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "fusion-reactor-equipment"
+      }
+    },
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "g-l"
+  },
 })

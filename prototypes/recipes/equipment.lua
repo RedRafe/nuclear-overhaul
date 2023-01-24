@@ -38,4 +38,16 @@ data:extend({
     },
     result = "exoskeleton-equipment"
   },
+  {
+    type = "recipe",
+    name = "fusion-reactor-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"processing-unit", 200},
+      {"low-density-structure", 50}
+    },
+    result = "fusion-reactor-equipment"
+  },
 })
