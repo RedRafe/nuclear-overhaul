@@ -25,4 +25,17 @@ data:extend({
     },
     result = "energy-shield-mk2-equipment"
   },
+  {
+    type = "recipe",
+    name = "exoskeleton-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"processing-unit", 10},
+      {"electric-engine-unit", 30},
+      {"steel-plate", 20}
+    },
+    result = "exoskeleton-equipment"
+  },
 })

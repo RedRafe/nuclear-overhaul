@@ -23,4 +23,15 @@ data:extend({
     default_request_amount = 5,
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "exoskeleton-equipment",
+    icon = "__base__/graphics/icons/exoskeleton-equipment.png",
+    icon_size = 64, icon_mipmaps = 4,
+    placed_as_equipment_result = "exoskeleton-equipment",
+    subgroup = "equipment",
+    order = "d[exoskeleton]-a[exoskeleton-equipment]",
+    default_request_amount = 5,
+    stack_size = 20
+  },
 })

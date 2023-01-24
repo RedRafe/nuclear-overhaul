@@ -47,4 +47,25 @@ data:extend({
     },
     order = "g-e-b"
   },
+  {
+    type = "technology",
+    name = "exoskeleton-equipment",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/exoskeleton-equipment.png"),
+    prerequisites = {"advanced-electronics-2", "electric-engine", "solar-panel-equipment"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "exoskeleton-equipment"
+      }
+    },
+    unit =
+    {
+      count = 50,
+      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
+      time = 30
+    },
+    order = "g-h"
+  },
 })
