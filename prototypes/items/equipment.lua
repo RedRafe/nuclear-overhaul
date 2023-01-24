@@ -45,4 +45,15 @@ data:extend({
     default_request_amount = 1,
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "night-vision-equipment",
+    icon = "__base__/graphics/icons/night-vision-equipment.png",
+    icon_size = 64, icon_mipmaps = 4,
+    placed_as_equipment_result = "night-vision-equipment",
+    subgroup = "equipment",
+    order = "f[night-vision]-a[night-vision-equipment]",
+    default_request_amount = 1,
+    stack_size = 20
+  },
 })

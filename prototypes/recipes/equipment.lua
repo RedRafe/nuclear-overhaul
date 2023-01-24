@@ -50,4 +50,16 @@ data:extend({
     },
     result = "fusion-reactor-equipment"
   },
+  {
+    type = "recipe",
+    name = "night-vision-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"advanced-circuit", 5},
+      {"steel-plate", 10}
+    },
+    result = "night-vision-equipment"
+  },
 })

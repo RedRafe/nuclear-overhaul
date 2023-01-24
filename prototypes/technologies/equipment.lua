@@ -96,4 +96,25 @@ data:extend({
     },
     order = "g-l"
   },
+  {
+    type = "technology",
+    name = "night-vision-equipment",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/night-vision-equipment.png"),
+    prerequisites = {"solar-panel-equipment"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "night-vision-equipment"
+      }
+    },
+    unit =
+    {
+      count = 50,
+      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "g-g"
+  },
 })
