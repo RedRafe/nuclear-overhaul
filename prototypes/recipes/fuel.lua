@@ -15,7 +15,8 @@ data:extend({
       {"uranium-238", 96}
     },
     result = "uranium-mox",
-    result_count = 1
+    result_count = 1,
+    requester_paste_multiplier = 1
   },
   -- Plutonium MOX
   {
@@ -32,7 +33,8 @@ data:extend({
       {"plutonium-239", 2}
     },
     result = "plutonium-mox",
-    result_count = 1
+    result_count = 1,
+    requester_paste_multiplier = 1
   },
   -- Thorium MOX
   {
@@ -50,7 +52,8 @@ data:extend({
       {"fluoride", 20}
     },
     result = "thorium-mox",
-    result_count = 1
+    result_count = 1,
+    requester_paste_multiplier = 1
   },
   -- Plutonium Fuel
   {
