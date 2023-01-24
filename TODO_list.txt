@@ -24,3 +24,16 @@ TODO list before release:
 - check version number
 - edit changelog
 - edit readme
+
+List of equipments and things to change: 
+(equipment, item, recipe, tech)
+- [ ] battery-mk2-equipment
+- [ ] energy-shield-equipment
+- [ ] energy-shield-mk2-equipment
+- [ ] exoskeleton-equipment
+- [ ] fusion-reactor-equipment
+- [ ] land-mine
+- [ ] night-vision-equipment
+- [ ] personal-laser-defense
+- [ ] personal-roboport-mk2-equipment
+- [ ] power-armor-mk2
