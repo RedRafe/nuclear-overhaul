@@ -18,6 +18,8 @@
 - [x] make PLutonium-Thorium fuel icons
 - [x] add matter recipes for U an Th of K2 (rewrite code?)
 - [ ] Reskin some arts (you can help me!)
+- [ ] Add compatibility with solar mods
+- [ ] Add science for nuclear made of Elements + concrete + copper wire + steel?
 
 TODO list before release:
 - set debug = false
