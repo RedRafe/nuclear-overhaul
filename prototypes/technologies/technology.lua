@@ -32,6 +32,7 @@ data:extend({
   {
     type = "technology",
     name = "uranium-processing-2",
+    localised_description = {"technology-description.uranium-processing-2"},
     icon_size = 256, icon_mipmaps = 1,
     icon = no_path_g_technologies .. "uranium-processing-2.png",
     effects =
@@ -205,6 +206,7 @@ data:extend({
     name = "advanced-nuclear-power",
     icon_size = 256, icon_mipmaps = 1,
     icon = no_path_g_technologies .. "lwr.png",
+    localised_description = {"technology-description.advanced-nuclear-power"},
     effects =
     {
       {
@@ -236,6 +238,7 @@ data:extend({
     name = "advanced-nuclear-power-2",
     icon_size = 256, icon_mipmaps = 1,
     icon = no_path_g_technologies .. "phwr.png",
+    localised_description = {"technology-description.advanced-nuclear-power-2"},
     effects =
     {
       {
@@ -272,6 +275,7 @@ data:extend({
     name = "advanced-nuclear-power-3",
     icon_size = 256, icon_mipmaps = 1,
     icon = no_path_g_technologies .. "lftr.png",
+    localised_description = {"technology-description.advanced-nuclear-power-3"},
     effects =
     {
       {
@@ -306,6 +310,7 @@ data:extend({
   {
     type = "technology",
     name = "nuclear-fuel-reprocessing-1",
+    localised_description = {"technology-description.nuclear-fuel-reprocessing-1"},
     icon_size = 256, icon_mipmaps = 4,
     icon = no_path_g_technologies .. "nuclear-fuel-reprocessing-1.png",
     effects =
@@ -333,6 +338,7 @@ data:extend({
   {
     type = "technology",
     name = "nuclear-fuel-reprocessing-2",
+    localised_description = {"technology-description.nuclear-fuel-reprocessing-2"},
     icon_size = 256, icon_mipmaps = 4,
     icon = no_path_g_technologies .. "nuclear-fuel-reprocessing-2.png",
     effects =
@@ -361,6 +367,7 @@ data:extend({
   {
     type = "technology",
     name = "nuclear-fuel-reprocessing-3",
+    localised_description = {"technology-description.nuclear-fuel-reprocessing-3"},
     icon_size = 256, icon_mipmaps = 4,
     icon = no_path_g_technologies .. "nuclear-fuel-reprocessing-3.png",
     effects =
