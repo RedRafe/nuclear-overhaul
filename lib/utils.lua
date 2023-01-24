@@ -49,4 +49,10 @@ function Utils.table_size(tbl)
   return count
 end
 
+function Utils.multiplyStringValue(text, coefficient)
+  local n = string.match(text, "%d+")
+  local s = string.match(text, "%a+")
+  return tostring(tonumber(n) * coefficient) .. s
+end
+
 return Utils

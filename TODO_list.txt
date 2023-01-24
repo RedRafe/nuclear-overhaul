@@ -12,7 +12,7 @@
 - [x] change reprocessing descriptions
 - [x] Introduce new war items/equipments obtained by nuclear waste
 - [ ] fare grafiche con sfondo mod portal color della catena di decadimento
-- [ ] Add compatibility with solar mods
+- [x] Add compatibility with solar mods
 
 
 TODO list before release:
