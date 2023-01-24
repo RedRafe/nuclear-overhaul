@@ -2,7 +2,7 @@ nuclear = {}
 nuclear.prefix = "no-"
 nuclear.base = "__nuclear-overhaul__/"
 nuclear.internal_name = "nuclear-overhaul"
-nuclear.name  = "Nuclear Extended"
+nuclear.name  = "Nuclear Overhaul"
 
 -- -- Init paths
 require(nuclear.base .. "lib/paths")

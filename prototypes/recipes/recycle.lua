@@ -17,7 +17,7 @@ data:extend({
     {
       {
         name = "uranium-235",
-        amount = 1
+        amount = 2
       },
       {
         name = "uranium-237",
@@ -25,7 +25,7 @@ data:extend({
       },
       {
         name = "uranium-238",
-        amount = 93
+        amount = 88
       },
       {
         name = "plutonium-238",
@@ -59,7 +59,7 @@ data:extend({
       },
       {
         name = "uranium-238",
-        amount = 90
+        amount = 88
       },
       {
         name = "plutonium-238",

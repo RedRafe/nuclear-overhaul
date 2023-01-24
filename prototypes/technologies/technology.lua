@@ -245,6 +245,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "plutonium-mox"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "plutonium-fuel"
       }
     },
     prerequisites = {"advanced-nuclear-power", "alpha-decay", "beta-decay"},
@@ -277,6 +281,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "thorium-mox"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "thorium-fuel"
       }
     },
     prerequisites = {"advanced-nuclear-power-2", "thorium-processing", "fluoride-processing"},
@@ -345,7 +353,7 @@ data:extend({
         {"production-science-pack", 1}
       },
       time = 30,
-      count = 50
+      count = 150
     },
     order = "e-p-b-c"
   },
@@ -373,7 +381,7 @@ data:extend({
         {"production-science-pack", 1},
       },
       time = 30,
-      count = 50
+      count = 300
     },
     order = "e-p-b-c"
   }

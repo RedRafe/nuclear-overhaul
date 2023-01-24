@@ -12,3 +12,15 @@ data.raw["boiler"]["heat-exchanger"].energy_consumption = "50MW"
 data.raw["boiler"]["heat-exchanger"].energy_source.specific_heat = "5MJ"
 data.raw["boiler"]["heat-exchanger"].energy_source.max_transfer = "10GW"
 data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 415
+
+
+-- Nerf solars
+data.raw["solar-panel"]["solar-panel"].production = "6kW" -- 60kW
+data.raw["accumulator"]["accumulator"].energy_source =
+{
+  type = "electric",
+  buffer_capacity = "500kJ", -- 5MJ
+  usage_priority = "tertiary",
+  input_flow_limit = "30kW",
+  output_flow_limit = "30kW"
+}

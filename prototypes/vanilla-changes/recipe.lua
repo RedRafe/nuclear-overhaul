@@ -33,7 +33,11 @@ data.raw["recipe"]["uranium-processing"] =
     },
     {
       name = "stone",
-      amount = 8
+      amount = 5
+    },
+    {
+      name = "iron-ore",
+      amount = 3
     }
   },
   crafting_machine_tint =

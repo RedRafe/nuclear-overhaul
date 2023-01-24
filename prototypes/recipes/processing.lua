@@ -4,10 +4,10 @@ data:extend({
   {
     type = "recipe",
     name = "uranium-processing-2",
-    energy_required = 12,
+    energy_required = 30, --12
     enabled = false,
     category = "centrifuging",
-    ingredients = {{"yellowcake", 2}}, --10
+    ingredients = {{"yellowcake", 3}}, --2, 10
     icon = "__base__/graphics/icons/uranium-processing.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "radioactive-products",
@@ -50,7 +50,11 @@ data:extend({
       },
       {
         name = "stone",
-        amount = 7
+        amount = 4
+      },
+      {
+        name = "copper-ore",
+        amount = 3
       }
     },
   }

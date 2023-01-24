@@ -35,11 +35,11 @@ if mods["Krastorio2"] then
       },
       {
         name = "stone",
-        amount = 6
+        amount = 5
       },
       {
         name = "iron-ore",   -- add iron-ore byproduct of K2
-        amount = 2
+        amount = 3
       }
     },
     crafting_machine_tint =

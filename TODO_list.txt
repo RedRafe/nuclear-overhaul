@@ -1,12 +1,25 @@
 - [ ] Introduce new war items/equipments obtained by nuclear waste
-- [ ] Reskin some arts (you can help me!)
+      - [ ] u236 equipments and armor
+            - plutonium armour
+            - uranium/plutonium power
+            - night vision Thorium
+            - shields Thorium
+            - lasers strange elements
+            - fluoride batteries
+            - fluoride solar panels
+            - exoskeleton
+            - roboport
 - [ ] Add new elements of the periodic table
 - [ ] Add infinite/dedicate science techs for nuclear
-- [x] add matter recipes for U an Th of K2 (rewrite code?)
 - [ ] balance power?
+      - [x] nerf solar
+      - [ ] tweak reactors/fuel values?
 - [x] turbine stacks to 50
+- [x] make PLutonium-Thorium fuel icons
+- [x] add matter recipes for U an Th of K2 (rewrite code?)
+- [ ] Reskin some arts (you can help me!)
 
-TODO list before relese:
+TODO list before release:
 - set debug = false
 - check version number
 - edit changelog

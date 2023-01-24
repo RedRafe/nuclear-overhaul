@@ -27,7 +27,7 @@ function Utils.split(str, delimiter)
   return splits
 end
 
--- GCD
+-- GCD, Greatest Common Divisor
 function Utils.gcd(a, b)
   if type(a) == "number" and type(b) == "number" and a == math.floor(a) and b == math.floor(b) then
     if b == 0 then

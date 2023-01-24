@@ -80,7 +80,7 @@ function addRecipeVariation(names, extensions)
       local gcd = _gcdIngredients(renewed_ingredients)
       if gcd > 1 then
         for _, elem in pairs(renewed_ingredients) do
-          elem[2] = elem[2] / gcd
+          elem[2] = math.ceil(elem[2] / gcd)
         end
       end
 
@@ -93,7 +93,7 @@ function addRecipeVariation(names, extensions)
           energy_required = recipe.energy_required,
           ingredients = renewed_ingredients,
           result = recipe.name,
-          result_count = extension.multiplier / gcd,
+          result_count = math.ceil(extension.multiplier / gcd),
           subgroup = recipe.subgroup,
           order = data.raw.ammo[recipe.name].order .. extension.order
         }
