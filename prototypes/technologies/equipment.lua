@@ -117,4 +117,31 @@ data:extend({
     },
     order = "g-g"
   },
+  {
+    type = "technology",
+    name = "personal-laser-defense-equipment",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-laser-defense-equipment.png"),
+    prerequisites = {"laser-turret", "military-3", "low-density-structure", "power-armor", "solar-panel-equipment"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "personal-laser-defense-equipment"
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"military-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "g-m"
+  },
 })

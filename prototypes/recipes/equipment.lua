@@ -62,4 +62,17 @@ data:extend({
     },
     result = "night-vision-equipment"
   },
+  {
+    type = "recipe",
+    name = "personal-laser-defense-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"processing-unit", 20},
+      {"low-density-structure", 5},
+      {"laser-turret", 5}
+    },
+    result = "personal-laser-defense-equipment"
+  },
 })
