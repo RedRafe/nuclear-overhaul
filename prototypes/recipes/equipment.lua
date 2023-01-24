@@ -1,91 +1,111 @@
+nuclear.debug.log("--equipment")
+
 data:extend({
   {
     type = "recipe",
-    name = "battery-mk2-equipment",
+    name = "battery-fluoride-th233-equipment",
     enabled = false,
     energy_required = 10,
     ingredients =
     {
-      {"battery-equipment", 10},
-      {"processing-unit", 15},
-      {"low-density-structure", 5}
+      {"battery-mk2-equipment", 10},
+      {"fluoride", 200},
+      {"thorium-233", 50}
     },
-    result = "battery-mk2-equipment"
+    result = "battery-fluoride-th233-equipment"
   },
     {
     type = "recipe",
-    name = "energy-shield-mk2-equipment",
+    name = "energy-shield-th232-equipment",
     enabled = false,
     energy_required = 10,
     ingredients =
     {
-      {"energy-shield-equipment", 10},
-      {"processing-unit", 5},
-      {"low-density-structure", 5}
+      {"energy-shield-mk2-equipment", 2},
+      {"thorium-232", 20},
+      {"accumulator", 40},
+      {"copper-plate", 150}
     },
-    result = "energy-shield-mk2-equipment"
-  },
-  {
-    type = "recipe",
-    name = "exoskeleton-equipment",
-    enabled = false,
-    energy_required = 10,
-    ingredients =
-    {
-      {"processing-unit", 10},
-      {"electric-engine-unit", 30},
-      {"steel-plate", 20}
-    },
-    result = "exoskeleton-equipment"
+    result = "energy-shield-th232-equipment"
   },
   {
     type = "recipe",
-    name = "fusion-reactor-equipment",
+    name = "exoskeleton-np237-equipment",
     enabled = false,
     energy_required = 10,
     ingredients =
     {
-      {"processing-unit", 200},
-      {"low-density-structure", 50}
+      {"exoskeleton-equipment", 4},
+      {"electric-engine-unit", 50},
+      {"steel-plate", 40},
+      {"neptunium-237", 30}
     },
-    result = "fusion-reactor-equipment"
+    result = "exoskeleton-np237-equipment"
   },
   {
     type = "recipe",
-    name = "night-vision-equipment",
+    name = "fusion-reactor-u236-equipment",
     enabled = false,
     energy_required = 10,
     ingredients =
     {
-      {"advanced-circuit", 5},
-      {"steel-plate", 10}
+      {"fusion-reactor-equipment", 5},
+      {"uranium-236", 200}
     },
-    result = "night-vision-equipment"
+    result = "fusion-reactor-u236-equipment"
   },
   {
     type = "recipe",
-    name = "personal-laser-defense-equipment",
+    name = "fusion-reactor-pu238-equipment",
     enabled = false,
     energy_required = 10,
     ingredients =
     {
+      {"fusion-reactor-equipment", 5},
+      {"plutonium-238", 500}
+    },
+    result = "fusion-reactor-pu238-equipment"
+  },
+  {
+    type = "recipe",
+    name = "night-vision-th232-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"night-vision-equipment", 4},
       {"processing-unit", 20},
-      {"low-density-structure", 5},
-      {"laser-turret", 5}
+      {"thorium-232", 20},
+      {"fluoride", 100}
+      
     },
-    result = "personal-laser-defense-equipment"
+    result = "night-vision-th232-equipment"
   },
   {
     type = "recipe",
-    name = "personal-roboport-mk2-equipment",
+    name = "personal-laser-defense-pa233-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"personal-laser-defense-equipment", 4},
+      {"protactinium-233", 12},
+      {"accumulator", 10}
+    },
+    result = "personal-laser-defense-pa233-equipment"
+  },
+  {
+    type = "recipe",
+    name = "personal-roboport-u236-equipment",
     enabled = false,
     energy_required = 20,
     ingredients =
     {
-      {"personal-roboport-equipment", 5},
-      {"processing-unit", 100},
-      {"low-density-structure", 20}
+      {"personal-roboport-mk2-equipment", 4},
+      {"uranium-236", 35},
+      {"roboport", 5},
+      {"substation", 10}
     },
-    result = "personal-roboport-mk2-equipment"
+    result = "personal-roboport-u236-equipment"
   },
 })

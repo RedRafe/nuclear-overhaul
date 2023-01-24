@@ -6,7 +6,7 @@ This mod reshapes the processing steps of Uranium in Factorio to be more complex
 ---
 
 ## Main features
-The mod introduces 12 new technologies, 19 new items, and 20 new recipes, that are designed to give nuclear processes a bit of realism as well as making it a fun production line to design and a relevant aspect of your factory. 
+The mod introduces 20+ new technologies, 30+ new items, and 30+ new recipes, that are designed to give nuclear processes a bit of realism as well as making it a fun production line to design and a relevant aspect of your factory. 
 
 ### 1. Uranium process revisited (more complex & realistic) 
    - Drills no longer require sulfuric acid to mine Uranium ore, but it will be used later in chemical facilities to obtain Yellowcake from uranium ore

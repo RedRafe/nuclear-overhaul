@@ -1,25 +1,19 @@
-- [ ] Introduce new war items/equipments obtained by nuclear waste
-      - [ ] u236 equipments and armor
-            - plutonium armour
-            - uranium/plutonium power
-            - night vision Thorium
-            - shields Thorium
-            - lasers strange elements
-            - fluoride batteries
-            - fluoride solar panels
-            - exoskeleton
-            - roboport
-- [ ] Add new elements of the periodic table
+- [ ] Add nuclear land mines(?)
 - [ ] Add infinite/dedicate science techs for nuclear
+- [ ] Add science for nuclear made of Elements + concrete + copper wire + steel?
+- [ ] Add new elements of the periodic table
+- [ ] Reskin some arts (you can help me!)
 - [ ] balance power?
       - [x] nerf solar
       - [ ] tweak reactors/fuel values?
 - [x] turbine stacks to 50
 - [x] make PLutonium-Thorium fuel icons
 - [x] add matter recipes for U an Th of K2 (rewrite code?)
-- [ ] Reskin some arts (you can help me!)
+- [x] change reprocessing descriptions
+- [x] Introduce new war items/equipments obtained by nuclear waste
+- [ ] fare grafiche con sfondo mod portal color della catena di decadimento
 - [ ] Add compatibility with solar mods
-- [ ] Add science for nuclear made of Elements + concrete + copper wire + steel?
+
 
 TODO list before release:
 - set debug = false
@@ -27,15 +21,3 @@ TODO list before release:
 - edit changelog
 - edit readme
 
-List of equipments and things to change: 
-(equipment, item, recipe, tech)
-- [ ] battery-mk2-equipment
-- [ ] energy-shield-equipment
-- [ ] energy-shield-mk2-equipment
-- [ ] exoskeleton-equipment
-- [ ] fusion-reactor-equipment
-- [ ] land-mine
-- [ ] night-vision-equipment
-- [ ] personal-laser-defense
-- [ ] personal-roboport-mk2-equipment
-- [ ] power-armor-mk2 (no equipment ma entity)

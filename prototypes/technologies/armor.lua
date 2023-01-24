@@ -1,29 +1,32 @@
+nuclear.debug.log("--armor")
+
 data:extend({
   {
     type = "technology",
-    name = "power-armor-mk2",
+    name = "power-armor-pu238",
     icon_size = 256, icon_mipmaps = 4,
-    icon = "__base__/graphics/technology/power-armor-mk2.png",
+    icon = no_path_g_technologies .. "power-armor-pu238.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "power-armor-mk2"
+        recipe = "power-armor-pu238"
       }
     },
-    prerequisites = {"power-armor", "military-4", "speed-module-2", "effectivity-module-2"},
+    prerequisites = {"power-armor-mk2", "alpha-decay", "beta-decay", "space-science-pack"},
     unit =
     {
-      count = 400,
-      ingredients =
-      {
+      count = 2000,
+      ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
         {"military-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"production-science-pack", 1},
+        {"space-science-pack", 1}
       },
-      time = 30
+      time = 60
     },
     order = "g-c-b"
   },
