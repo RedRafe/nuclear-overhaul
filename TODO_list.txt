@@ -38,4 +38,4 @@ List of equipments and things to change:
 - [ ] night-vision-equipment
 - [ ] personal-laser-defense
 - [ ] personal-roboport-mk2-equipment
-- [ ] power-armor-mk2
+- [ ] power-armor-mk2 (no equipment ma entity)
