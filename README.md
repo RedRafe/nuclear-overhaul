@@ -87,8 +87,10 @@ It's still a new project, compatibility with specific mods is not implemented bu
 ---
 
 ### Future developments
-- Re-skin some graphics (you can help me!)
-- Add further elements of the periodic table
-- Add infinite/dedicate science techs requiring nuclear
-- Add new nuclear recipes
-- Improve compatibility
+1. Re-skin some graphics (you can help me!)
+2. Add further elements of the periodic table
+3. Add infinite/dedicate science techs requiring nuclear
+4. Add new nuclear recipes
+5. Improve compatibility
+    - K2 (50%) and SE (10%) are work in progress
+

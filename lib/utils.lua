@@ -49,6 +49,7 @@ function Utils.table_size(tbl)
   return count
 end
 
+-- string, number
 function Utils.multiplyStringValue(text, coefficient)
   local n = string.match(text, "%d+")
   local s = string.match(text, "%a+")
