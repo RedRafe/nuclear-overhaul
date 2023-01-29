@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 29.01.2023
-  Rebalance:
+  Changes:
     - Removed Solar panels and Accumulators nerf (0.1x -> 1.0x)
     - Decreased Reactors' output by 60% (300 -> 120, 175 -> 70, 270 -> 108 MW)
     - Decreased Mox values by 60% (64 -> 25.6, 86 -> 34,4, 128 -> 51.2 GJ)
