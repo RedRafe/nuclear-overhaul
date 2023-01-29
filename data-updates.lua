@@ -11,9 +11,11 @@ if nuclear.debug.state then
   data.raw.tile["lab-dark-1"].map_color = {r=0, g=0, b=0}
 end
 
--- nerf solars and accumulators
+
+--[[
+-- nerf solars and accumulators (no need anymore)
 local msv = require(no_path_lib .. "utils").multiplyStringValue
-local nerf = 0.1 -- /10 of production values
+local nerf = 1 -- /10 of production values
 
 for ___, solar in pairs(data.raw["solar-panel"]) do
   solar.production = msv(solar.production, nerf)
@@ -28,3 +30,4 @@ for ___, accu in pairs(data.raw["accumulator"]) do
     output_flow_limit = msv(accu.energy_source.output_flow_limit, nerf)
   }
 end
+]]
