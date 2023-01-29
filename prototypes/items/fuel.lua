@@ -1,5 +1,5 @@
 nuclear.debug.log("--fuel")
-
+local OUTPUT_COEFF = 0.4 
 
 --[[
   +---------+---------+-----------+
@@ -42,7 +42,7 @@ data:extend({
     order = "c[mox]-a[u]",
     fuel_category = "uranium-mix",
     burnt_result = "used-uranium-mox",
-    fuel_value = "64GJ", --64GJ
+    fuel_value = "25.6GJ", --64GJ
     stack_size = 10
   },
   -- Plutonium MOX
@@ -75,7 +75,7 @@ data:extend({
     order = "c[mox]-b[pu]",
     fuel_category = "plutonium-mix",
     burnt_result = "used-plutonium-mox",
-    fuel_value = "86GJ", -- 74GJ
+    fuel_value = "34.4GJ", -- 74GJ
     stack_size = 10
   },
   -- Thorium MOX
@@ -108,7 +108,7 @@ data:extend({
     order = "c[mox]-c[th]",
     fuel_category = "thorium-mix",
     burnt_result = "used-thorium-mox",
-    fuel_value = "128GJ", --1600 / 3840 GJ overkill
+    fuel_value = "51.2GJ", --1600 / 3840 GJ overkill
     stack_size = 10
   },
   -- Used Uranium MOX

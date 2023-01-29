@@ -16,6 +16,7 @@ nuclear.debug.log("--reactor")
 local entities = {}
 local heated_pipes_tint = {0.5, 0.4, 0.3, 0.5}
 local heat_glow_tint = {1, 1, 1, 1}
+local OUTPUT_COEFF = 0.4 -- multiply output by this value
 
 apply_heat_pipe_glow = function(layer)
     layer.tint = heated_pipes_tint
@@ -89,7 +90,7 @@ data:extend({
     max_health = 500, -- 500 MW
     corpse = "nuclear-reactor-remnants",
     dying_explosion = "nuclear-reactor-explosion",
-    consumption = "300MW", -- 40 MW
+    consumption = "120MW", -- 4300 MW
     neighbour_bonus = 0, -- 1 disabled
     energy_source =
     {
@@ -374,7 +375,7 @@ data:extend({
     max_health = 400,
     corpse = "nuclear-reactor-remnants",
     dying_explosion = "nuclear-reactor-explosion",
-    consumption = "175MW",
+    consumption = "70MW", --175 MW
     neighbour_bonus = 0, -- disabled
     energy_source =
     {
@@ -653,7 +654,7 @@ data:extend({
     max_health = 600,
     corpse = "nuclear-reactor-remnants",
     dying_explosion = "nuclear-reactor-explosion",
-    consumption = "270MW",
+    consumption = "108MW", --270 MW
     neighbour_bonus = 0, -- disabled
     energy_source =
     {
