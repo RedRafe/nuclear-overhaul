@@ -1,11 +1,11 @@
-nuclear.debug.log("--yellowcake")
+nolib.debug.log('-- yellowcake')
 
 -- Yellowcake (Uranium powder)
 data:extend({
   {
-		type = "item",
-		name = "yellowcake",
-		icon = no_path_g_icons .. "uranium-powder.png",
+		type = 'item',
+		name = 'yellowcake',
+		icon = no_path_g_icons .. 'uranium-powder.png',
 		icon_size = 64,
 		icon_mipmaps = 4,
 		pictures =
@@ -15,17 +15,17 @@ data:extend({
 				{
 					{
 						size = 64,
-						filename = no_path_g_icons .. "uranium-powder.png",
+						filename = no_path_g_icons .. 'uranium-powder.png',
 						scale = 0.25,
 						mipmap_count = 4
 					},
 					{
 						draw_as_light = true,
-						flags = {"light"},
-						blend_mode = "additive",
+						flags = { 'light' },
+						blend_mode = 'additive',
 						tint = {r = 0.3, g = 0.3, b = 0.3, a = 0.3},
 						size = 64,
-						filename = no_path_g_icons .. "uranium-powder-light.png",
+						filename = no_path_g_icons .. 'uranium-powder-light.png',
 						scale = 0.25,
 						mipmap_count = 4
 					}
@@ -36,17 +36,17 @@ data:extend({
 				{
 					{
 						size = 64,
-						filename = no_path_g_icons .. "uranium-powder-1.png",
+						filename = no_path_g_icons .. 'uranium-powder-1.png',
 						scale = 0.25,
 						mipmap_count = 4
 					},
 					{
 						draw_as_light = true,
-						flags = {"light"},
-						blend_mode = "additive",
+						flags = { 'light' },
+						blend_mode = 'additive',
 						tint = {r = 0.3, g = 0.3, b = 0.3, a = 0.3},
 						size = 64,
-						filename = no_path_g_icons .. "uranium-powder-1-light.png",
+						filename = no_path_g_icons .. 'uranium-powder-1-light.png',
 						scale = 0.25,
 						mipmap_count = 4
 					}
@@ -57,25 +57,25 @@ data:extend({
 				{
 					{
 						size = 64,
-						filename = no_path_g_icons .. "uranium-powder-2.png",
+						filename = no_path_g_icons .. 'uranium-powder-2.png',
 						scale = 0.25,
 						mipmap_count = 4
 					},
 					{
 						draw_as_light = true,
-						flags = {"light"},
-						blend_mode = "additive",
+						flags = { 'light' },
+						blend_mode = 'additive',
 						tint = {r = 0.3, g = 0.3, b = 0.3, a = 0.3},
 						size = 64,
-						filename = no_path_g_icons .. "uranium-powder-2-light.png",
+						filename = no_path_g_icons .. 'uranium-powder-2-light.png',
 						scale = 0.25,
 						mipmap_count = 4
 					}
 				}
 			}
 		},
-		subgroup = "raw-material",
-		order = "g[uranium-powder]",
+		subgroup = 'raw-material',
+		order = 'g[uranium-powder]',
 		stack_size = 100
   }
 })

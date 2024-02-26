@@ -11,7 +11,6 @@
 - [x] add matter recipes for U an Th of K2 (rewrite code?)
 - [x] change reprocessing descriptions
 - [x] Introduce new war items/equipments obtained by nuclear waste
-- [ ] fare grafiche con sfondo mod portal color della catena di decadimento
 - [x] Add compatibility with solar mods
 
 

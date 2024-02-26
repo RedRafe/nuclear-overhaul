@@ -1,27 +1,59 @@
-nuclear = {} 
-nuclear.prefix = "no-"
-nuclear.base = "__nuclear-overhaul__/"
-nuclear.internal_name = "nuclear-overhaul"
-nuclear.name  = "Nuclear Overhaul"
+_DEBUG = false
+nolib = require '__nuclear-overhaul__.lib.data-util'
 
--- -- Init paths
-require(nuclear.base .. "lib/paths")
+-- ============================================================================
 
--- -- Import library
-require(no_path_lib .. "__init__")
-require(no_path_lib .. "debugger")
+nolib.debug.log('-- -- Categories')
+require 'prototypes.categories.element'
+require 'prototypes.categories.fuel'
 
----------------------------------------------------------------------------
+nolib.debug.log('-- -- Entities')
+require 'prototypes.entities.reactor'
+require 'prototypes.entities.resource'
 
-nuclear.debug.log("-- --data")
-require(no_path_p_categories       .. "__init__")
-require(no_path_p_entities         .. "__init__")
-require(no_path_p_equipments       .. "__init__")
-require(no_path_p_items            .. "__init__")
-require(no_path_p_recipes          .. "__init__")
-require(no_path_p_technologies     .. "__init__")
-require(no_path_p_vanilla_changes  .. "__init__")
+nolib.debug.log('-- -- Equipments')
+require 'prototypes.equipments.active-defense'
+require 'prototypes.equipments.battery'
+require 'prototypes.equipments.energy-shield'
+require 'prototypes.equipments.exoskeleton'
+require 'prototypes.equipments.generator'
+require 'prototypes.equipments.night-vision'
+require 'prototypes.equipments.roboport'
 
----------------------------------------------------------------------------
+nolib.debug.log('-- -- Items')
+require 'prototypes.items.armor'
+require 'prototypes.items.element'
+require 'prototypes.items.equipment'
+require 'prototypes.items.fluoride'
+require 'prototypes.items.fuel'
+require 'prototypes.items.reactor'
+require 'prototypes.items.thorium'
+require 'prototypes.items.yellowcake'
 
-require(no_path_compatibility_scripts .. "Krastorio2/data")
+nolib.debug.log('-- -- Recipes')
+require 'prototypes.recipes.armor'
+require 'prototypes.recipes.decay'
+require 'prototypes.recipes.enrichment'
+require 'prototypes.recipes.equipment'
+require 'prototypes.recipes.fluoride'
+require 'prototypes.recipes.fuel'
+require 'prototypes.recipes.processing'
+require 'prototypes.recipes.reactor'
+require 'prototypes.recipes.recycle'
+
+nolib.debug.log('-- -- Technologies')
+require 'prototypes.technologies.armor'
+require 'prototypes.technologies.equipment'
+require 'prototypes.technologies.technology'
+
+nolib.debug.log('-- -- Vanilla changes')
+require 'prototypes.vanilla-changes.entity'
+require 'prototypes.vanilla-changes.item'
+require 'prototypes.vanilla-changes.recipe'
+require 'prototypes.vanilla-changes.resource'
+require 'prototypes.vanilla-changes.technology'
+
+-- ============================================================================
+
+nolib.debug.log('-- -- Compatibility data')
+require 'compatibility.krastorio2.data'

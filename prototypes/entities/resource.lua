@@ -1,32 +1,32 @@
-nuclear.debug.log("--resources")
+nolib.debug.log('-- resources')
 
-local resource_autoplace = require("__core__/lualib/resource-autoplace")
+local resource_autoplace = require('__core__/lualib/resource-autoplace')
 
 -- Add Thorium ore
 data:extend(
 {	
 	{
-		type = "resource",
-		name = "thorium-ore",
-		icon = no_path_g_icons .. "thorium-ore.png",
+		type = 'resource',
+		name = 'thorium-ore',
+		icon = no_path_g_icons .. 'thorium-ore.png',
 		icon_size = 64,
-		flags = {"placeable-neutral"},
-		order="a-b-a",
-		subgroup = "raw-resource",
+		flags = { 'placeable-neutral' },
+		order = 'a-b-a',
+		subgroup = 'raw-resource',
 		tree_removal_probability = 0,
 		tree_removal_max_distance = 0,
 		minable =
 		{
 			hardness = 2,
-			mining_particle = "stone-particle",
+			mining_particle = 'stone-particle',
 			mining_time = 3,
-			result = "thorium-ore"
+			result = 'thorium-ore'
 		},
-		collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
+		collision_box = {{ -0.1, -0.1 }, {0.1, 0.1 }},
 		selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
 		autoplace = resource_autoplace.resource_autoplace_settings({
-			name = "thorium-ore",
-			order = "d",
+			name = 'thorium-ore',
+			order = 'd',
 			base_density = 1.0,
 			base_spots_per_km2 = 1.25,
 			has_starting_area_placement = false,
@@ -41,16 +41,16 @@ data:extend(
     {
       sheet =
       {
-        filename = no_path_g_entities .. "thorium-ore/thorium-ore.png",
-        priority = "extra-high",
+        filename = no_path_g_entities .. 'thorium-ore/thorium-ore.png',
+        priority = 'extra-high',
         width = 64,
         height = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version =
         {
-          filename = no_path_g_entities .. "thorium-ore/hr-thorium-ore.png",
-          priority = "extra-high",
+          filename = no_path_g_entities .. 'thorium-ore/hr-thorium-ore.png',
+          priority = 'extra-high',
           width = 128,
           height = 128,
           frame_count = 8,
@@ -63,25 +63,25 @@ data:extend(
     {
       sheet =
       {
-        filename = no_path_g_entities .. "thorium-ore/thorium-ore-glow.png",
-        priority = "extra-high",
+        filename = no_path_g_entities .. 'thorium-ore/thorium-ore-glow.png',
+        priority = 'extra-high',
         width = 64,
         height = 64,
         frame_count = 8,
         variation_count = 8,
-        blend_mode = "additive",
-        flags = {"light"},
+        blend_mode = 'additive',
+        flags = { 'light' },
         hr_version =
         {
-          filename = no_path_g_entities .. "thorium-ore/hr-thorium-ore-glow.png",
-          priority = "extra-high",
+          filename = no_path_g_entities .. 'thorium-ore/hr-thorium-ore-glow.png',
+          priority = 'extra-high',
           width = 128,
           height = 128,
           frame_count = 8,
           variation_count = 8,
           scale = 0.5,
-          blend_mode = "additive",
-          flags = {"light"}
+          blend_mode = 'additive',
+          flags = { 'light' }
         }
       }
     },
@@ -94,15 +94,15 @@ data:extend(
     map_color = {0.7, 0, 0.7}
 	},
 	{
-		type = "autoplace-control",
-		name = "thorium-ore",
-		localised_name = { "", "[entity=thorium-ore] ", { "autoplace-control-names.thorium-ore" } },
-		order= "j-a",
+		type = 'autoplace-control',
+		name = 'thorium-ore',
+		localised_name = { '', '[entity=thorium-ore] ', { 'autoplace-control-names.thorium-ore' } },
+		order= 'j-a',
 		richness = true,
-		category = "resource"
+		category = 'resource'
 	},
 	{
-		type = "noise-layer",
-		name = "thorium-ore"
+		type = 'noise-layer',
+		name = 'thorium-ore'
 	}
 })

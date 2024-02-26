@@ -1,4 +1,4 @@
-nuclear.debug.log("--reactor")
+nolib.debug.log('-- reactor')
 
 --[[
     Table:  reactor values and comparison
@@ -12,7 +12,7 @@ nuclear.debug.log("--reactor")
 ]]
 
 --FIXME: phw-reactor heated pipes not rendering correctly (just visual bug)
---require "util"
+--require 'util'
 local entities = {}
 local heated_pipes_tint = {0.5, 0.4, 0.3, 0.5}
 local heat_glow_tint = {1, 1, 1, 1}
@@ -45,21 +45,21 @@ function make_heat_pipe_pictures(path, name_prefix, data, draw_as_glow)
     local func = draw_as_glow and apply_heat_pipe_glow or function(t) return t end
     for key, t in pairs(data) do
       if t.empty then
-        all_pictures[key] = { priority = "extra-high", filename = "__core__/graphics/empty.png", width = 1, height = 1 }
+        all_pictures[key] = { priority = 'extra-high', filename = '__core__/graphics/empty.png', width = 1, height = 1 }
       else
         local tile_pictures = {}
         for i = 1, (t.variations or 1) do
           local sprite = func
           {
-            priority = "extra-high",
-            filename = path .. name_prefix .. "-" .. (t.name or string.gsub(key, "_", "-")) .. (t.ommit_number and ".png" or ("-" .. tostring(i) .. ".png")),
+            priority = 'extra-high',
+            filename = path .. name_prefix .. '-' .. (t.name or string.gsub(key, '_', '-')) .. (t.ommit_number and '.png' or ('-' .. tostring(i) .. '.png')),
             width = (t.width or 32),
             height = (t.height or 32),
             shift = t.shift,
             hr_version =
             {
-              priority = "extra-high",
-              filename = path .. "hr-" .. name_prefix .. "-" .. (t.name or string.gsub(key, "_", "-")) .. (t.ommit_number and ".png" or ("-" .. tostring(i) .. ".png")),
+              priority = 'extra-high',
+              filename = path .. 'hr-' .. name_prefix .. '-' .. (t.name or string.gsub(key, '_', '-')) .. (t.ommit_number and '.png' or ('-' .. tostring(i) .. '.png')),
               width = (t.width or 32) * 2,
               height = (t.height or 32) * 2,
               scale = 0.5,
@@ -74,28 +74,28 @@ function make_heat_pipe_pictures(path, name_prefix, data, draw_as_glow)
     return all_pictures
 end
 
-local base_reactor = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
+local base_reactor = util.table.deepcopy(data.raw.reactor['nuclear-reactor'])
 
 ---------------------------------------------------------------------------
 -- -- LWR - Light Water Reactor (normal size, slower)
 ---------------------------------------------------------------------------
 data:extend({
   {
-    type = "reactor",
-    name = "lw-reactor",
-    icon  = no_path_g_icons .. "lw-reactor.png",
+    type = 'reactor',
+    name = 'lw-reactor',
+    icon  = no_path_g_icons .. 'lw-reactor.png',
     icon_size = 64, icon_mipmaps = 1,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "lw-reactor"},
+    flags = { 'placeable-neutral', 'player-creation' },
+    minable = {mining_time = 0.5, result = 'lw-reactor' },
     max_health = 500, -- 500 MW
-    corpse = "nuclear-reactor-remnants",
-    dying_explosion = "nuclear-reactor-explosion",
-    consumption = "120MW", -- 4300 MW
+    corpse = 'nuclear-reactor-remnants',
+    dying_explosion = 'nuclear-reactor-explosion',
+    consumption = '120MW', -- 4300 MW
     neighbour_bonus = 0, -- 1 disabled
     energy_source =
     {
-      type = "burner",
-      fuel_category = "uranium-mix",
+      type = 'burner',
+      fuel_category = 'uranium-mix',
       effectivity = 0.3, -- 1 
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
@@ -109,16 +109,15 @@ data:extend({
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     damaged_trigger_effect = base_reactor.damaged_trigger_effect,
-
     lower_layer_picture =
     {
-      filename = no_path_g_entities .. "lw-reactor/reactor-pipes.png",
+      filename = no_path_g_entities .. 'lw-reactor/reactor-pipes.png',
       width = 156,
       height = 156,
       shift = util.by_pixel(-2, -4),
       hr_version =
       {
-        filename = no_path_g_entities .. "lw-reactor/hr-reactor-pipes.png",
+        filename = no_path_g_entities .. 'lw-reactor/hr-reactor-pipes.png',
         width = 320,
         height = 316,
         scale = 0.5,
@@ -127,32 +126,31 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
     {
-      filename = no_path_g_entities .. "lw-reactor/reactor-pipes-heated.png",
+      filename = no_path_g_entities .. 'lw-reactor/reactor-pipes-heated.png',
       width = 156,
       height = 156,
       shift = util.by_pixel(-3, -4),
       hr_version =
       {
-        filename = no_path_g_entities .. "lw-reactor/hr-reactor-pipes-heated.png",
+        filename = no_path_g_entities .. 'lw-reactor/hr-reactor-pipes-heated.png',
         width = 320,
         height = 316,
         scale = 0.5,
         shift = util.by_pixel(-0.5, -4.5)
       }
     },
-
     picture =
     {
       layers =
       {
         {
-          filename = no_path_g_entities .. "lw-reactor/reactor.png",
+          filename = no_path_g_entities .. 'lw-reactor/reactor.png',
           width = 154,
           height = 158,
           shift = util.by_pixel(-6, -6),
           hr_version =
           {
-            filename = no_path_g_entities .. "lw-reactor/hr-reactor.png",
+            filename = no_path_g_entities .. 'lw-reactor/hr-reactor.png',
             width = 302,
             height = 318,
             scale = 0.5,
@@ -160,14 +158,14 @@ data:extend({
           }
         },
         {
-          filename = no_path_g_entities .. "lw-reactor/reactor-shadow.png",
+          filename = no_path_g_entities .. 'lw-reactor/reactor-shadow.png',
           width = 263,
           height = 162,
           shift = { 1.625 , 0 },
           draw_as_shadow = true,
           hr_version =
           {
-            filename = no_path_g_entities .. "lw-reactor/hr-reactor-shadow.png",
+            filename = no_path_g_entities .. 'lw-reactor/hr-reactor-shadow.png',
             width = 525,
             height = 323,
             scale = 0.5,
@@ -177,19 +175,18 @@ data:extend({
         }
       }
     },
-
     working_light_picture =
     {
-      filename = no_path_g_entities .. "lw-reactor/reactor-lights-color.png",
-      blend_mode = "additive",
+      filename = no_path_g_entities .. 'lw-reactor/reactor-lights-color.png',
+      blend_mode = 'additive',
       draw_as_glow = true,
       width = 160,
       height = 160,
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
-        filename = no_path_g_entities .. "lw-reactor/hr-reactor-lights-color.png",
-        blend_mode = "additive",
+        filename = no_path_g_entities .. 'lw-reactor/hr-reactor-lights-color.png',
+        blend_mode = 'additive',
         draw_as_glow = true,
         width = 320,
         height = 320,
@@ -197,12 +194,11 @@ data:extend({
         shift = { -0.03125, -0.1875 },
       }
     },
-
     heat_buffer =
     {
       max_temperature = 1000,
-      specific_heat = "50MJ",
-      max_transfer = "50GW",
+      specific_heat = '50MJ',
+      max_transfer = '50GW',
       minimum_glow_temperature = 350,
       connections =
       {
@@ -255,16 +251,15 @@ data:extend({
           direction = defines.direction.west
         }
       },
-
       heat_picture = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "lw-reactor/reactor-heated.png",
+        filename = no_path_g_entities .. 'lw-reactor/reactor-heated.png',
         width = 108,
         height = 128,
         shift = util.by_pixel(1, -7),
         hr_version =
         {
-          filename = no_path_g_entities .. "lw-reactor/hr-reactor-heated.png",
+          filename = no_path_g_entities .. 'lw-reactor/hr-reactor-heated.png',
           width = 216,
           height = 256,
           scale = 0.5,
@@ -272,18 +267,17 @@ data:extend({
         }
       },
     },
-
     connection_patches_connected =
     {
       sheet =
       {
-        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. 'lw-reactor/reactor-connect-patches.png',
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. 'lw-reactor/hr-reactor-connect-patches.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -291,19 +285,18 @@ data:extend({
         }
       }
     },
-
     connection_patches_disconnected =
     {
       sheet =
       {
-        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. 'lw-reactor/reactor-connect-patches.png',
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. 'lw-reactor/hr-reactor-connect-patches.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -312,18 +305,17 @@ data:extend({
         }
       }
     },
-
     heat_connection_patches_connected =
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. 'lw-reactor/reactor-connect-patches-heated.png',
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. 'lw-reactor/hr-reactor-connect-patches-heated.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -331,19 +323,18 @@ data:extend({
         }
       }
     },
-
     heat_connection_patches_disconnected =
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "lw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. 'lw-reactor/reactor-connect-patches-heated.png',
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = no_path_g_entities .. "lw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. 'lw-reactor/hr-reactor-connect-patches-heated.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -352,7 +343,6 @@ data:extend({
         }
       }
     },
-
     vehicle_impact_sound = base_reactor.vehicle_impact_sound,
     open_sound = base_reactor.open_sound,
     close_sound = base_reactor.close_sound,
@@ -366,21 +356,21 @@ data:extend({
 ---------------------------------------------------------------------------
 data:extend({
   {
-    type = "reactor",
-    name = "phw-reactor",
-    icon  = no_path_g_icons .. "phw-reactor.png",
+    type = 'reactor',
+    name = 'phw-reactor',
+    icon  = no_path_g_icons .. 'phw-reactor.png',
     icon_size = 64, icon_mipmaps = 1,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "phw-reactor"},
+    flags = { 'placeable-neutral', 'player-creation' },
+    minable = {mining_time = 0.5, result = 'phw-reactor' },
     max_health = 400,
-    corpse = "nuclear-reactor-remnants",
-    dying_explosion = "nuclear-reactor-explosion",
-    consumption = "70MW", --175 MW
+    corpse = 'nuclear-reactor-remnants',
+    dying_explosion = 'nuclear-reactor-explosion',
+    consumption = '70MW', --175 MW
     neighbour_bonus = 0, -- disabled
     energy_source =
     {
-      type = "burner",
-      fuel_category = "plutonium-mix",
+      type = 'burner',
+      fuel_category = 'plutonium-mix',
       effectivity = 0.35,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
@@ -394,17 +384,16 @@ data:extend({
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = base_reactor.damaged_trigger_effect,
-
     lower_layer_picture =
     {
-      filename = no_path_g_entities .. "phw-reactor/reactor-pipes.png",
+      filename = no_path_g_entities .. 'phw-reactor/reactor-pipes.png',
       width = 94,
       height = 94,
       --scale = 0.6,
       shift = util.by_pixel(-2, -4),
       hr_version =
       {
-        filename = no_path_g_entities .. "phw-reactor/hr-reactor-pipes.png",
+        filename = no_path_g_entities .. 'phw-reactor/hr-reactor-pipes.png',
         width = 190,
         height = 190,
         scale = 0.5, --0.3
@@ -413,34 +402,33 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
     {
-      filename = no_path_g_entities .. "phw-reactor/reactor-pipes-heated.png",
+      filename = no_path_g_entities .. 'phw-reactor/reactor-pipes-heated.png',
       width = 94,
       height = 94,
       --scale = 0.6,
       shift = util.by_pixel(-3, -4),
       hr_version =
       {
-        filename = no_path_g_entities .. "phw-reactor/hr-reactor-pipes-heated.png",
+        filename = no_path_g_entities .. 'phw-reactor/hr-reactor-pipes-heated.png',
         width = 190,
         height = 190,
         scale = 0.5, --0.3
         shift = util.by_pixel(-0.5, -4.5)
       }
     },
-
     picture =
     {
       layers =
       {
         {
-          filename = no_path_g_entities .. "phw-reactor/reactor.png",
+          filename = no_path_g_entities .. 'phw-reactor/reactor.png',
           width = 154,
           height = 158,
           scale = 0.6,
           shift = util.by_pixel(-6, -6),
           hr_version =
           {
-            filename = no_path_g_entities .. "phw-reactor/hr-reactor.png",
+            filename = no_path_g_entities .. 'phw-reactor/hr-reactor.png',
             width = 302,
             height = 318,
             scale = 0.3,
@@ -448,7 +436,7 @@ data:extend({
           }
         },
         {
-          filename = no_path_g_entities .. "phw-reactor/reactor-shadow.png",
+          filename = no_path_g_entities .. 'phw-reactor/reactor-shadow.png',
           width = 263,
           height = 162,
           scale = 0.6,
@@ -456,7 +444,7 @@ data:extend({
           draw_as_shadow = true,
           hr_version =
           {
-            filename = no_path_g_entities .. "phw-reactor/hr-reactor-shadow.png",
+            filename = no_path_g_entities .. 'phw-reactor/hr-reactor-shadow.png',
             width = 525,
             height = 323,
             scale = 0.3,
@@ -466,11 +454,10 @@ data:extend({
         }
       }
     },
-
     working_light_picture =
     {
-      filename = no_path_g_entities .. "phw-reactor/reactor-lights-color.png",
-      blend_mode = "additive",
+      filename = no_path_g_entities .. 'phw-reactor/reactor-lights-color.png',
+      blend_mode = 'additive',
       draw_as_glow = true,
       width = 160,
       height = 160,
@@ -478,8 +465,8 @@ data:extend({
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
-        filename = no_path_g_entities .. "phw-reactor/hr-reactor-lights-color.png",
-        blend_mode = "additive",
+        filename = no_path_g_entities .. 'phw-reactor/hr-reactor-lights-color.png',
+        blend_mode = 'additive',
         draw_as_glow = true,
         width = 320,
         height = 320,
@@ -487,59 +474,57 @@ data:extend({
         shift = { -0.03125, -0.1875 },
       }
     },
-
     heat_buffer =
     {
       max_temperature = 1000,
-      specific_heat = "15MJ",
-      max_transfer = "50GW",
+      specific_heat = '15MJ',
+      max_transfer = '50GW',
       minimum_glow_temperature = 350,
       connections =
       {
         {
-          position = {-1, -1},
+          position = {-1, -1 },
           direction = defines.direction.north
         },
         {
-          position = {1, -1},
+          position = {1, -1 },
           direction = defines.direction.north
         },
         {
-          position = {1, -1},
+          position = {1, -1 },
           direction = defines.direction.east
         },
         {
-          position = {1, 1},
+          position = {1, 1 },
           direction = defines.direction.east
         },
         {
-          position = {1, 1},
+          position = {1, 1 },
           direction = defines.direction.south
         },
         {
-          position = {-1, 1},
+          position = {-1, 1 },
           direction = defines.direction.south
         },
         {
-          position = {-1, 1},
+          position = {-1, 1 },
           direction = defines.direction.west
         },
         {
-          position = {-1, -1},
+          position = {-1, -1 },
           direction = defines.direction.west
         }
       },
-
       heat_picture = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "phw-reactor/reactor-heated.png",
+        filename = no_path_g_entities .. 'phw-reactor/reactor-heated.png',
         width = 108,
         height = 128,
         scale = 0.6,
         shift = util.by_pixel(-2, -7), --util.by_pixel(1, -7)
         hr_version =
         {
-          filename = no_path_g_entities .. "phw-reactor/hr-reactor-heated.png",
+          filename = no_path_g_entities .. 'phw-reactor/hr-reactor-heated.png',
           width = 216,
           height = 256,
           scale = 0.3,
@@ -547,19 +532,18 @@ data:extend({
         }
       },
     },
-
     connection_patches_connected =
     {
       sheet =
       {
-        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. 'phw-reactor/reactor-connect-patches.png',
         width = 32,
         height = 32,
         variation_count = 12,
         --scale = 0.6,
         hr_version =
         {
-          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. 'phw-reactor/hr-reactor-connect-patches.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -567,12 +551,11 @@ data:extend({
         }
       }
     },
-
     connection_patches_disconnected =
     {
       sheet =
       {
-        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. 'phw-reactor/reactor-connect-patches.png',
         width = 32,
         height = 32,
         variation_count = 12,
@@ -580,7 +563,7 @@ data:extend({
         --scale = 0.6,
         hr_version =
         {
-          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. 'phw-reactor/hr-reactor-connect-patches.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -589,19 +572,18 @@ data:extend({
         }
       }
     },
-
     heat_connection_patches_connected =
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. 'phw-reactor/reactor-connect-patches-heated.png',
         width = 32,
         height = 32,
         variation_count = 12,
         --scale = 0.6,
         hr_version =
         {
-          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. 'phw-reactor/hr-reactor-connect-patches-heated.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -609,12 +591,11 @@ data:extend({
         }
       }
     },
-
     heat_connection_patches_disconnected =
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "phw-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. 'phw-reactor/reactor-connect-patches-heated.png',
         width = 32,
         height = 32,
         variation_count = 12,
@@ -622,7 +603,7 @@ data:extend({
         --scale = 0.6,
         hr_version =
         {
-          filename = no_path_g_entities .. "phw-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. 'phw-reactor/hr-reactor-connect-patches-heated.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -631,7 +612,6 @@ data:extend({
         }
       }
     },
-
     vehicle_impact_sound = base_reactor.vehicle_impact_sound,
     open_sound = base_reactor.open_sound,
     close_sound = base_reactor.close_sound,
@@ -645,21 +625,21 @@ data:extend({
 ---------------------------------------------------------------------------
 data:extend({
   {
-    type = "reactor",
-    name = "lft-reactor",
-    icon  = no_path_g_icons .. "lft-reactor.png",
+    type = 'reactor',
+    name = 'lft-reactor',
+    icon  = no_path_g_icons .. 'lft-reactor.png',
     icon_size = 64, icon_mipmaps = 1,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "lft-reactor"},
+    flags = { 'placeable-neutral', 'player-creation' },
+    minable = {mining_time = 0.5, result = 'lft-reactor' },
     max_health = 600,
-    corpse = "nuclear-reactor-remnants",
-    dying_explosion = "nuclear-reactor-explosion",
-    consumption = "108MW", --270 MW
+    corpse = 'nuclear-reactor-remnants',
+    dying_explosion = 'nuclear-reactor-explosion',
+    consumption = '108MW', --270 MW
     neighbour_bonus = 0, -- disabled
     energy_source =
     {
-      type = "burner",
-      fuel_category = "thorium-mix",
+      type = 'burner',
+      fuel_category = 'thorium-mix',
       effectivity = 0.45,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
@@ -673,16 +653,15 @@ data:extend({
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     damaged_trigger_effect = base_reactor.damaged_trigger_effect,
-
     lower_layer_picture =
     {
-      filename = no_path_g_entities .. "lft-reactor/reactor-pipes.png",
+      filename = no_path_g_entities .. 'lft-reactor/reactor-pipes.png',
       width = 156,
       height = 156,
       shift = util.by_pixel(-2, -4),
       hr_version =
       {
-        filename = no_path_g_entities .. "lft-reactor/hr-reactor-pipes.png",
+        filename = no_path_g_entities .. 'lft-reactor/hr-reactor-pipes.png',
         width = 320,
         height = 316,
         scale = 0.5,
@@ -691,32 +670,31 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
     {
-      filename = no_path_g_entities .. "lft-reactor/reactor-pipes-heated.png",
+      filename = no_path_g_entities .. 'lft-reactor/reactor-pipes-heated.png',
       width = 156,
       height = 156,
       shift = util.by_pixel(-3, -4),
       hr_version =
       {
-        filename = no_path_g_entities .. "lft-reactor/hr-reactor-pipes-heated.png",
+        filename = no_path_g_entities .. 'lft-reactor/hr-reactor-pipes-heated.png',
         width = 320,
         height = 316,
         scale = 0.5,
         shift = util.by_pixel(-0.5, -4.5)
       }
     },
-
     picture =
     {
       layers =
       {
         {
-          filename = no_path_g_entities .. "lft-reactor/reactor.png",
+          filename = no_path_g_entities .. 'lft-reactor/reactor.png',
           width = 154,
           height = 158,
           shift = util.by_pixel(-6, -6),
           hr_version =
           {
-            filename = no_path_g_entities .. "lft-reactor/hr-reactor.png",
+            filename = no_path_g_entities .. 'lft-reactor/hr-reactor.png',
             width = 302,
             height = 318,
             scale = 0.5,
@@ -724,14 +702,14 @@ data:extend({
           }
         },
         {
-          filename = no_path_g_entities .. "lft-reactor/reactor-shadow.png",
+          filename = no_path_g_entities .. 'lft-reactor/reactor-shadow.png',
           width = 263,
           height = 162,
           shift = { 1.625 , 0 },
           draw_as_shadow = true,
           hr_version =
           {
-            filename = no_path_g_entities .. "lft-reactor/hr-reactor-shadow.png",
+            filename = no_path_g_entities .. 'lft-reactor/hr-reactor-shadow.png',
             width = 525,
             height = 323,
             scale = 0.5,
@@ -741,19 +719,18 @@ data:extend({
         }
       }
     },
-
     working_light_picture =
     {
-      filename = no_path_g_entities .. "lft-reactor/reactor-lights-color.png",
-      blend_mode = "additive",
+      filename = no_path_g_entities .. 'lft-reactor/reactor-lights-color.png',
+      blend_mode = 'additive',
       draw_as_glow = true,
       width = 160,
       height = 160,
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
-        filename = no_path_g_entities .. "lft-reactor/hr-reactor-lights-color.png",
-        blend_mode = "additive",
+        filename = no_path_g_entities .. 'lft-reactor/hr-reactor-lights-color.png',
+        blend_mode = 'additive',
         draw_as_glow = true,
         width = 320,
         height = 320,
@@ -761,12 +738,11 @@ data:extend({
         shift = { -0.03125, -0.1875 },
       }
     },
-
     heat_buffer =
     {
       max_temperature = 1000,
-      specific_heat = "50MJ",
-      max_transfer = "50GW",
+      specific_heat = '50MJ',
+      max_transfer = '50GW',
       minimum_glow_temperature = 350,
       connections =
       {
@@ -819,16 +795,15 @@ data:extend({
           direction = defines.direction.west
         }
       },
-
       heat_picture = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "lft-reactor/reactor-heated.png",
+        filename = no_path_g_entities .. 'lft-reactor/reactor-heated.png',
         width = 108,
         height = 128,
         shift = util.by_pixel(1, -7),
         hr_version =
         {
-          filename = no_path_g_entities .. "lft-reactor/hr-reactor-heated.png",
+          filename = no_path_g_entities .. 'lft-reactor/hr-reactor-heated.png',
           width = 216,
           height = 256,
           scale = 0.5,
@@ -836,18 +811,17 @@ data:extend({
         }
       },
     },
-
     connection_patches_connected =
     {
       sheet =
       {
-        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. 'lft-reactor/reactor-connect-patches.png',
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. 'lft-reactor/hr-reactor-connect-patches.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -855,19 +829,18 @@ data:extend({
         }
       }
     },
-
     connection_patches_disconnected =
     {
       sheet =
       {
-        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches.png",
+        filename = no_path_g_entities .. 'lft-reactor/reactor-connect-patches.png',
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches.png",
+          filename = no_path_g_entities .. 'lft-reactor/hr-reactor-connect-patches.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -876,18 +849,17 @@ data:extend({
         }
       }
     },
-
     heat_connection_patches_connected =
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. 'lft-reactor/reactor-connect-patches-heated.png',
         width = 32,
         height = 32,
         variation_count = 12,
         hr_version =
         {
-          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. 'lft-reactor/hr-reactor-connect-patches-heated.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -895,19 +867,18 @@ data:extend({
         }
       }
     },
-
     heat_connection_patches_disconnected =
     {
       sheet = apply_heat_pipe_glow
       {
-        filename = no_path_g_entities .. "lft-reactor/reactor-connect-patches-heated.png",
+        filename = no_path_g_entities .. 'lft-reactor/reactor-connect-patches-heated.png',
         width = 32,
         height = 32,
         variation_count = 12,
         y = 32,
         hr_version =
         {
-          filename = no_path_g_entities .. "lft-reactor/hr-reactor-connect-patches-heated.png",
+          filename = no_path_g_entities .. 'lft-reactor/hr-reactor-connect-patches-heated.png',
           width = 64,
           height = 64,
           variation_count = 12,
@@ -916,7 +887,6 @@ data:extend({
         }
       }
     },
-
     vehicle_impact_sound = base_reactor.vehicle_impact_sound,
     open_sound = base_reactor.open_sound,
     close_sound = base_reactor.close_sound,

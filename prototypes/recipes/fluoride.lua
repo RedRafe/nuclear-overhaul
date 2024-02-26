@@ -1,20 +1,20 @@
-nuclear.debug.log("--fluoride")
+nolib.debug.log('-- fluoride')
 
 data:extend({
   {
-    type = "recipe",
-    name = "fluoride",
-    category = "chemistry",
+    type = 'recipe',
+    name = 'fluoride',
+    category = 'chemistry',
     energy_required = 4,
     enabled = false,
     ingredients =
     {
-      {type="fluid", name="water", amount=800},
-      {type="item", name="stone", amount=30}
+      { type = 'fluid', name = 'water', amount = 800 },
+      { type = 'item',  name = 'stone', amount =  30 }
     },
-    results=
+    results = 
     {
-      {type="item", name="fluoride", amount=1}
+      { type = 'item', name = 'fluoride', amount = 1 }
     },
     allow_productivity = true,
     crafting_machine_tint =
@@ -26,3 +26,5 @@ data:extend({
     }
   }
 })
+
+nolib.whitelist_productivity('fluoride')

@@ -1,4 +1,4 @@
-nuclear.debug.log("--reactor")
+nolib.debug.log('-- reactor')
 
 --[[
   Table: Capital cost for nuclear power plants
@@ -12,61 +12,61 @@ nuclear.debug.log("--reactor")
 ]]
 local resources  = {500, 400, 200, 400}
 local multiplier = {
-  ['lwr']  = 1,
-  ['phwr'] = 420 / 500,
-  ['lftr'] = 700 / 500
+  lwr  = 1,
+  pwr  = 420 / 500,
+  lftr = 700 / 500
 }
 
 data:extend({
   -- LWR
   {
-    type = "recipe",
-    name = "lw-reactor",
+    type = 'recipe',
+    name = 'lw-reactor',
     energy_required = 300,
     enabled = false,
-    category = "crafting-with-fluid",
+    category = 'crafting-with-fluid',
     ingredients =
     {
-      {"concrete", resources[1] * multiplier["lwr"]},
-      {"steel-plate", resources[2] * multiplier["lwr"]},
-      {"advanced-circuit", resources[3] * multiplier["lwr"]},
-      {"copper-plate", resources[4] * multiplier["lwr"]}
+      { 'concrete',         resources[1] * multiplier.lwr },
+      { 'steel-plate',      resources[2] * multiplier.lwr },
+      { 'advanced-circuit', resources[3] * multiplier.lwr },
+      { 'copper-plate',     resources[4] * multiplier.lwr },
     },
-    result = "lw-reactor",
+    result = 'lw-reactor',
     requester_paste_multiplier = 1
   },
   -- PHWR
   {
-    type = "recipe",
-    name = "phw-reactor",
+    type = 'recipe',
+    name = 'phw-reactor',
     energy_required = 300,
     enabled = false,
-    category = "crafting-with-fluid",
+    category = 'crafting-with-fluid',
     ingredients =
     {
-      {"concrete", resources[1] * multiplier["phwr"]},
-      {"steel-plate", resources[2] * multiplier["phwr"]},
-      {"advanced-circuit", resources[3] * multiplier["phwr"]},
-      {"copper-plate", resources[4] * multiplier["phwr"]}
+      { 'concrete',         resources[1] * multiplier.pwr },
+      { 'steel-plate',      resources[2] * multiplier.pwr },
+      { 'advanced-circuit', resources[3] * multiplier.pwr },
+      { 'copper-plate',     resources[4] * multiplier.pwr },
     },
-    result = "phw-reactor",
+    result = 'phw-reactor',
     requester_paste_multiplier = 1
   },
   -- LFTR
   {
-    type = "recipe",
-    name = "lft-reactor",
+    type = 'recipe',
+    name = 'lft-reactor',
     energy_required = 300,
     enabled = false,
-    category = "crafting-with-fluid",
+    category = 'crafting-with-fluid',
     ingredients =
     {
-      {"concrete", resources[1] * multiplier["lftr"]},
-      {"steel-plate", resources[2] * multiplier["lftr"]},
-      {"advanced-circuit", resources[3] * multiplier["lftr"]},
-      {"copper-plate", resources[4] * multiplier["lftr"]}
+      { 'concrete',         resources[1] * multiplier.lftr },
+      { 'steel-plate',      resources[2] * multiplier.lftr },
+      { 'advanced-circuit', resources[3] * multiplier.lftr },
+      { 'copper-plate',     resources[4] * multiplier.lftr },
     },
-    result = "lft-reactor",
+    result = 'lft-reactor',
     requester_paste_multiplier = 1
   }
 })

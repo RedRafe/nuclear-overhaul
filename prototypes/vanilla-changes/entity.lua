@@ -1,14 +1,28 @@
-nuclear.debug.log("--entity")
+nolib.debug.log('-- entity')
 
--- Heat pipe
-data.raw["heat-pipe"]["heat-pipe"].max_health = 100
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.specific_heat = "6MJ"
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_transfer = "6GW"
 
--- Heat exchanger
-data.raw["boiler"]["heat-exchanger"].max_health = 250
-data.raw["boiler"]["heat-exchanger"].target_temperature = 415
-data.raw["boiler"]["heat-exchanger"].energy_consumption = "20MW" --50MW * 0.4
-data.raw["boiler"]["heat-exchanger"].energy_source.specific_heat = "5MJ"
-data.raw["boiler"]["heat-exchanger"].energy_source.max_transfer = "10GW"
-data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 415
+nolib.update_prototypes({
+  -- Heat pipe
+  {
+    name = 'heat-pipe',
+    type = 'heat-pipe',
+    max_health = 100,
+    heat_buffer = {
+      specific_heat = '6MJ',
+      max_transfer = '6GW'
+    }
+  },
+  -- Heat exchanger
+  {
+    name = 'heat-exchanger',
+    type = 'boiler',
+    max_health = 250,
+    target_temperature = 415,
+    energy_consumption = '20MW', --50MW * 0.4
+    energy_source = {
+      specific_heat = '5MJ',
+      max_transfer = '10GW',
+      min_working_temperature = 415,
+    }
+  },
+})

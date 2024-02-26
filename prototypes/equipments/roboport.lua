@@ -1,22 +1,22 @@
-nuclear.debug.log("--roboport")
+nolib.debug.log('-- roboport')
 
 data:extend({
   {
-    type = "roboport-equipment",
-    name = "personal-roboport-u236-equipment",
-    take_result = "personal-roboport-u236-equipment",
+    type = 'roboport-equipment',
+    name = 'personal-roboport-u236-equipment',
+    take_result = 'personal-roboport-u236-equipment',
     sprite =
     {
-      filename = no_path_g_equipments .. "personal-roboport-u236-equipment.png",
+      filename = no_path_g_equipments .. 'personal-roboport-u236-equipment.png',
       width = 64,
       height = 64,
-      priority = "medium",
+      priority = 'medium',
       hr_version =
       {
-        filename = no_path_g_equipments .. "hr-personal-roboport-u236-equipment.png",
+        filename = no_path_g_equipments .. 'hr-personal-roboport-u236-equipment.png',
         width = 128,
         height = 128,
-        priority = "medium",
+        priority = 'medium',
         scale = 0.5
       }
     },
@@ -24,16 +24,16 @@ data:extend({
     {
       width = 2,
       height = 2,
-      type = "full"
+      type = 'full'
     },
     energy_source =
     {
-      type = "electric",
-      buffer_capacity = "50MJ", --35 MJ
-      input_flow_limit = "5000KW",
-      usage_priority = "secondary-input"
+      type = 'electric',
+      buffer_capacity = '50MJ', --35 MJ
+      input_flow_limit = '5000KW',
+      usage_priority = 'secondary-input'
     },
-    charging_energy = "1500kW", --might want to increase it
+    charging_energy = '1500kW', --might want to increase it
 
     robot_limit = 40,
     construction_radius = 25,
@@ -44,9 +44,9 @@ data:extend({
 
     recharging_animation =
     {
-      filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
+      filename = '__base__/graphics/entity/roboport/roboport-recharging.png',
       draw_as_glow = true,
-      priority = "high",
+      priority = 'high',
       width = 37,
       height = 35,
       frame_count = 16,
@@ -59,6 +59,6 @@ data:extend({
     charging_station_count = 20,
     charging_distance = 2,
     charging_threshold_distance = 8,
-    categories = {"armor"}
+    categories = { 'armor' }
   },
 })
