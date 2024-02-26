@@ -80,12 +80,13 @@ You can help by translating this mod into your language. Any new translations wi
 
 ## Known Bugs & Mod compatibility
 Please feel free to report any known issue! :) 
-This Nuclear Overhaul mod introduces heavy changes in the Uranium process and nuclear items, it may have conflicts with other mods that deal with Uranium and Nuclear too! (should not interfere with other mechanics tho). 
+This Nuclear Overhaul mod introduces heavy changes in the Uranium process and nuclear items, it may have conflicts with other mods that deal with Uranium and Nuclear too! (should not interfere with other mechanics, tho). 
 
-It's still a new project, compatibility with specific mods is not implemented but its WIP. For any inquiries, please refer to the discussion page of the mod portal.
 Special compatibility with:
 - Bob's mods
 - Krastorio2
+
+For any inquiries, please refer to the discussion page of the mod portal or over on mu discord server listed below.
 
 ---
 
@@ -93,7 +94,9 @@ Special compatibility with:
 1. Re-skin some graphics (you can help me!)
 2. Add further elements of the periodic table
 3. Add infinite/dedicate science techs requiring nuclear
-4. Add new nuclear recipes
+4. Add new nuclear recipes and arsenals
 5. Improve compatibility
-    - K2 (50%) and SE (10%) are work in progress
+   - K2 (100% done) and SE (20% done)
+   - Bob's mods (100% done)
 
+*Join my [Discord](https://discord.gg/pq6bWs8KTY)*

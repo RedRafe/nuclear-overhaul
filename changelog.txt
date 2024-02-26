@@ -1,11 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2024-02-26
+  Changes:
+    - Removed dummy ammo recipes
+    - Changed uranium/plutonium ingredient amounts for ammo recipes
+  Compatibility:
+    - Added compatibility with Krastorio2
+    - Added compatibility with Bob's mods
+    - Improved all-round compatibility with prototypes safety checks and migration upon removal
+  Info:
+    - Refactored mod and functions
+---------------------------------------------------------------------------------------------------
 Version: 1.1.3
-Date: 25.02.2024
+Date: 2024-02-25
   Fixes:
     - Fixed true Nukes crash on load
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
-Date: 29.01.2023
+Date: 2023-01-29
   Changes:
     - Removed Solar panels and Accumulators nerf (0.1x -> 1.0x)
     - Decreased Reactors' output by 60% (300 -> 120, 175 -> 70, 270 -> 108 MW)
@@ -13,10 +25,11 @@ Date: 29.01.2023
     - Decreased Heat Boiler output by 60% ( 50 -> 20 MW)
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
-Date: 24.01.2023
+Date: 2023-01-24
   Fixes:
     - Fixed wrong localised deacriptions
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.0
-Date: 24.01.2023
-  - Release
+Version: 0.1.0
+Date: 2023-01-24
+  Info:
+    - Initial release v.0.1.0
