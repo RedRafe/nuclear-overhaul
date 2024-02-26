@@ -83,6 +83,9 @@ Please feel free to report any known issue! :)
 This Nuclear Overhaul mod introduces heavy changes in the Uranium process and nuclear items, it may have conflicts with other mods that deal with Uranium and Nuclear too! (should not interfere with other mechanics tho). 
 
 It's still a new project, compatibility with specific mods is not implemented but its WIP. For any inquiries, please refer to the discussion page of the mod portal.
+Special compatibility with:
+- Bob's mods
+- Krastorio2
 
 ---
 
