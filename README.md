@@ -85,6 +85,7 @@ This Nuclear Overhaul mod introduces heavy changes in the Uranium process and nu
 Special compatibility with:
 - Bob's mods
 - Krastorio2
+- Space Exploration
 
 For any inquiries, please refer to the discussion page of the mod portal or over on mu discord server listed below.
 
@@ -93,13 +94,15 @@ For any inquiries, please refer to the discussion page of the mod portal or over
 ## Attributions
 - Assets of *Yellowcake*, *Fluoride* and *Thorium* by [Malcom Riley](https://github.com/malcolmriley/unused-renders), under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), thank you very much!
 
+---
+
 ### Future developments
 1. Re-skin some graphics (you can help me!)
 2. Add further elements of the periodic table
 3. Add infinite/dedicate science techs requiring nuclear
 4. Add new nuclear recipes and arsenals
 5. Improve compatibility
-   - K2 (100% done) and SE (20% done)
-   - Bob's mods (100% done)
+   - K2 and SE 
+   - Bob's mods
 
 *Join my [Discord](https://discord.gg/pq6bWs8KTY)*

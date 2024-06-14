@@ -86,7 +86,3 @@ data:extend({
     result = 'thorium-fuel'
   },
 })
-
-nolib.whitelist_productivity('uranium-mox')
-nolib.whitelist_productivity('plutonium-mox')
-nolib.whitelist_productivity('thorium-mox')
