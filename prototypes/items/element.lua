@@ -4,6 +4,7 @@ nolib.debug.log('-- element')
 data:extend({
   -- -- Thorium [90]
   -- Th-232
+  -- [ ] thorium-232
   {
     type = 'item',
     name = 'thorium-232',

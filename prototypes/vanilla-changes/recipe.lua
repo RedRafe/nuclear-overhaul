@@ -14,7 +14,7 @@ if data.raw.recipe['uranium-processing'] then
       { type = 'item',  name = 'uranium-ore',   amount = 10 },
       { type = 'fluid', name = 'sulfuric-acid', amount =  5 },
     },
-    icon = no_path_g_icons .. 'uranium-powder.png',
+    icon = no_path_g_icons .. 'pile-chunk-yellowcake-4.png',
     icon_size = 64, icon_mipmaps = 4,
     subgroup = 'raw-material',
     order = 'k[uranium-processing-1]',

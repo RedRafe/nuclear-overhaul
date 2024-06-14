@@ -8,7 +8,7 @@ data:extend(
 	{
 		type = 'resource',
 		name = 'thorium-ore',
-		icon = no_path_g_icons .. 'thorium-ore.png',
+		icon =  no_path_g_icons .. 'ore-crystal-cinnabar-1.png',
 		icon_size = 64,
 		flags = { 'placeable-neutral' },
 		order = 'a-b-a',

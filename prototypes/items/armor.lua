@@ -1,6 +1,7 @@
 nolib.debug.log('-- armor')
 
 data:extend({
+  -- [ ] power-armor-pu238
   {
     type = 'armor',
     name = 'power-armor-pu238',

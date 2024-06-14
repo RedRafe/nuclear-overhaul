@@ -5,8 +5,8 @@ data.raw.technology['uranium-processing'] =
 {
   type = 'technology',
   name = 'uranium-processing',
-  icon_size = 64, icon_mipmaps = 4,
-  icon = no_path_g_icons .. 'uranium-powder.png',
+  icon_size = 1024, icon_mipmaps = 1,
+  icon = no_path_g_technologies .. 'pile-chunk-yellowcake-4.png',
   effects =
   {
     {

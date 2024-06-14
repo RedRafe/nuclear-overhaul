@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.0
+Date: 2024-06-14
+  Changes:
+    - Updated icons with assets from Malcom Riley, thanks!
+    - Daily stats are no longer printed until first reactor is build
+  Bugfixes:
+    - Fixed Thorium ore localization not showing correctly
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2024-05-26
+  Compatibility:
+    - Added compatibility with IR3
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 2024-02-26
   Changes:

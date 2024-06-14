@@ -5,8 +5,8 @@ data:extend({
   {
     type = 'technology',
     name = 'fluoride-processing',
-    icon_size = 256, icon_mipmaps = 4,
-    icon = no_path_g_technologies .. 'fluoride-processing.png',
+    icon_size = 1024,
+    icon = no_path_g_technologies .. 'material-crystal-fluorite-2.png',
     effects =
     {
       {
@@ -33,8 +33,8 @@ data:extend({
     type = 'technology',
     name = 'uranium-processing-2',
     localised_description = { 'technology-description.uranium-processing-2' },
-    icon_size = 256, icon_mipmaps = 1,
-    icon = no_path_g_technologies .. 'uranium-processing-2.png',
+    icon_size = 256, icon_mipmaps = 4,
+    icon = '__base__/graphics/technology/uranium-processing.png',
     effects =
     {
       {

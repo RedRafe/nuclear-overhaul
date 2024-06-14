@@ -90,6 +90,9 @@ For any inquiries, please refer to the discussion page of the mod portal or over
 
 ---
 
+## Attributions
+- Assets of *Yellowcake*, *Fluoride* and *Thorium* by [Malcom Riley](https://github.com/malcolmriley/unused-renders), under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), thank you very much!
+
 ### Future developments
 1. Re-skin some graphics (you can help me!)
 2. Add further elements of the periodic table
