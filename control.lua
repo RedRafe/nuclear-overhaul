@@ -40,7 +40,7 @@ local radioactive_items = {
 }
 
 script.on_init(function()
-  if remote.interfaces["kr-radioactivity"] 
+  if remote.interfaces["kr-radioactivity"]
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
@@ -54,7 +54,7 @@ script.on_init(function()
 end)
 
 script.on_load(function()
-  if remote.interfaces["kr-radioactivity"] 
+  if remote.interfaces["kr-radioactivity"]
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
