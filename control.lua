@@ -13,6 +13,7 @@ handler.add_libraries{
   require 'scripts.reactor-failure',
 }
 
+-- Add support for K2 radioactivity
 local radioactive_entities = { "thorium-ore" }
 local radioactive_items = {
   "neptunium-237",
@@ -37,17 +38,15 @@ local radioactive_items = {
   "used-uranium-mox",
   "yellowcake"
 }
--- Add support for K2 radioactivity
+
 script.on_init(function()
   if remote.interfaces["kr-radioactivity"] 
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
-
     for i, name in ipairs(radioactive_entities) do
       remote.call("kr-radioactivity", "add_entity", name )
     end
-
     for i, name in ipairs(radioactive_items) do
       remote.call("kr-radioactivity", "add_item", name )
     end
@@ -59,11 +58,9 @@ script.on_load(function()
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
-
     for i, name in ipairs(radioactive_entities) do
       remote.call("kr-radioactivity", "add_entity", name )
     end
-
     for i, name in ipairs(radioactive_items) do
       remote.call("kr-radioactivity", "add_item", name )
     end
