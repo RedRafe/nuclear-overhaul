@@ -13,35 +13,44 @@ handler.add_libraries{
   require 'scripts.reactor-failure',
 }
 
+local radioactive_entities = { "thorium-ore" }
+local radioactive_items = {
+  "neptunium-237",
+  "plutonium-238",
+  "plutonium-239",
+  "plutonium-fuel",
+  "plutonium-mox",
+  "protactinium-233",
+  "protactinium-234",
+  "thorium-232",
+  "thorium-233",
+  "thorium-fuel",
+  "thorium-mox",
+  "thorium-ore",
+  "uranium-233",
+  "uranium-234",
+  "uranium-236",
+  "uranium-237",
+  "uranium-mox",
+  "used-plutonium-mox",
+  "used-thorium-mox",
+  "used-uranium-mox",
+  "yellowcake"
+}
 -- Add support for K2 radioactivity
 script.on_init(function()
   if remote.interfaces["kr-radioactivity"] 
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
-    remote.call("kr-radioactivity", "add_entity", "thorium-ore" )
-    remote.call("kr-radioactivity", "add_item", "neptunium-237")
-    remote.call("kr-radioactivity", "add_item", "neptunium-237")
-    remote.call("kr-radioactivity", "add_item", "plutonium-238")
-    remote.call("kr-radioactivity", "add_item", "plutonium-239")
-    remote.call("kr-radioactivity", "add_item", "plutonium-fuel")
-    remote.call("kr-radioactivity", "add_item", "plutonium-mox")
-    remote.call("kr-radioactivity", "add_item", "protactinium-233")
-    remote.call("kr-radioactivity", "add_item", "protactinium-234")
-    remote.call("kr-radioactivity", "add_item", "thorium-232")
-    remote.call("kr-radioactivity", "add_item", "thorium-233")
-    remote.call("kr-radioactivity", "add_item", "thorium-fuel")
-    remote.call("kr-radioactivity", "add_item", "thorium-mox")
-    remote.call("kr-radioactivity", "add_item", "thorium-ore")
-    remote.call("kr-radioactivity", "add_item", "uranium-233")
-    remote.call("kr-radioactivity", "add_item", "uranium-234")
-    remote.call("kr-radioactivity", "add_item", "uranium-236")
-    remote.call("kr-radioactivity", "add_item", "uranium-237")
-    remote.call("kr-radioactivity", "add_item", "uranium-mox")
-    remote.call("kr-radioactivity", "add_item", "used-plutonium-mox")
-    remote.call("kr-radioactivity", "add_item", "used-thorium-mox")
-    remote.call("kr-radioactivity", "add_item", "used-uranium-mox")
-    remote.call("kr-radioactivity", "add_item", "yellowcake")
+
+    for i, name in ipairs(radioactive_entities) do
+      remote.call("kr-radioactivity", "add_entity", name )
+    end
+
+    for i, name in ipairs(radioactive_items) do
+      remote.call("kr-radioactivity", "add_item", name )
+    end
   end
 end)
 
@@ -50,28 +59,13 @@ script.on_load(function()
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
-    remote.call("kr-radioactivity", "add_entity", "thorium-ore" )
-    remote.call("kr-radioactivity", "add_item", "neptunium-237")
-    remote.call("kr-radioactivity", "add_item", "neptunium-237")
-    remote.call("kr-radioactivity", "add_item", "plutonium-238")
-    remote.call("kr-radioactivity", "add_item", "plutonium-239")
-    remote.call("kr-radioactivity", "add_item", "plutonium-fuel")
-    remote.call("kr-radioactivity", "add_item", "plutonium-mox")
-    remote.call("kr-radioactivity", "add_item", "protactinium-233")
-    remote.call("kr-radioactivity", "add_item", "protactinium-234")
-    remote.call("kr-radioactivity", "add_item", "thorium-232")
-    remote.call("kr-radioactivity", "add_item", "thorium-233")
-    remote.call("kr-radioactivity", "add_item", "thorium-fuel")
-    remote.call("kr-radioactivity", "add_item", "thorium-mox")
-    remote.call("kr-radioactivity", "add_item", "thorium-ore")
-    remote.call("kr-radioactivity", "add_item", "uranium-233")
-    remote.call("kr-radioactivity", "add_item", "uranium-234")
-    remote.call("kr-radioactivity", "add_item", "uranium-236")
-    remote.call("kr-radioactivity", "add_item", "uranium-237")
-    remote.call("kr-radioactivity", "add_item", "uranium-mox")
-    remote.call("kr-radioactivity", "add_item", "used-plutonium-mox")
-    remote.call("kr-radioactivity", "add_item", "used-thorium-mox")
-    remote.call("kr-radioactivity", "add_item", "used-uranium-mox")
-    remote.call("kr-radioactivity", "add_item", "yellowcake")
+
+    for i, name in ipairs(radioactive_entities) do
+      remote.call("kr-radioactivity", "add_entity", name )
+    end
+
+    for i, name in ipairs(radioactive_items) do
+      remote.call("kr-radioactivity", "add_item", name )
+    end
   end
 end)
