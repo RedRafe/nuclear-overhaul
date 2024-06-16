@@ -13,3 +13,57 @@ handler.add_libraries{
   require 'scripts.reactor-failure',
   require 'compatibility.krastorio2.control'
 }
+
+-- add support for Krastorio 2 radioactivity
+local radioactive_entities = { "thorium-ore" }
+local radioactive_items = {
+  "neptunium-237",
+  "plutonium-238",
+  "plutonium-239",
+  "plutonium-fuel",
+  "plutonium-mox",
+  "protactinium-233",
+  "protactinium-234",
+  "thorium-232",
+  "thorium-233",
+  "thorium-fuel",
+  "thorium-mox",
+  "thorium-ore",
+  "uranium-233",
+  "uranium-234",
+  "uranium-236",
+  "uranium-237",
+  "uranium-mox",
+  "used-plutonium-mox",
+  "used-thorium-mox",
+  "used-uranium-mox",
+  "yellowcake"
+}
+
+script.on_init(function()
+  if remote.interfaces["kr-radioactivity"]
+    and remote.interfaces["kr-radioactivity"]["add_entity"]
+    and remote.interfaces["kr-radioactivity"]["add_item"]
+  then
+    for _, entity in pairs(radioactive_entities) do
+      remote.call("kr-radioactivity", "add_entity", entity)
+    end
+    for _, item in pairs(radioactive_items) do
+      remote.call("kr-radioactivity", "add_item", item)
+    end
+  end
+end)
+
+script.on_load(function()
+  if remote.interfaces["kr-radioactivity"]
+    and remote.interfaces["kr-radioactivity"]["add_entity"]
+    and remote.interfaces["kr-radioactivity"]["add_item"]
+  then
+    for _, entity in pairs(radioactive_entities) do
+      remote.call("kr-radioactivity", "add_entity", entity)
+    end
+    for _, item in pairs(radioactive_items) do
+      remote.call("kr-radioactivity", "add_item", item)
+    end
+  end
+end)
