@@ -44,8 +44,8 @@ script.on_init(function()
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
-    for _, item in pairs(radioactive_entities) do
-      remote.call("kr-radioactivity", "add_entity", item)
+    for _, entity in pairs(radioactive_entities) do
+      remote.call("kr-radioactivity", "add_entity", entity)
     end
     for _, item in pairs(radioactive_items) do
       remote.call("kr-radioactivity", "add_item", item)
@@ -58,8 +58,8 @@ script.on_load(function()
     and remote.interfaces["kr-radioactivity"]["add_entity"]
     and remote.interfaces["kr-radioactivity"]["add_item"]
   then
-    for _, item in pairs(radioactive_entities) do
-      remote.call("kr-radioactivity", "add_entity", item)
+    for _, entity in pairs(radioactive_entities) do
+      remote.call("kr-radioactivity", "add_entity", entity)
     end
     for _, item in pairs(radioactive_items) do
       remote.call("kr-radioactivity", "add_item", item)
