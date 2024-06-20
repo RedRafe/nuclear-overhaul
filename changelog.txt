@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.2
+Date: 2024-06-20
+  Changes:
+    - Fix radioactivity updates for ongoing saves
+---------------------------------------------------------------------------------------------------
 Version: 3.1.1
 Date: 2024-06-16
   Changes:
@@ -12,7 +17,7 @@ Date: 2024-06-14
 Version: 3.0.0
 Date: 2024-06-14
   Changes:
-    - Updated icons with assets from Malcom Riley, thanks!
+    - Updated icons with assets from Malcolm Riley, thanks!
     - Daily stats are no longer printed until first reactor is build
   Bugfixes:
     - Fixed Thorium ore localization not showing correctly

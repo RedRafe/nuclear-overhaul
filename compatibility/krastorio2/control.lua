@@ -42,6 +42,6 @@ end
 local this = {}
 
 this.on_init = whitelist_radioactivity
-this.on_load = whitelist_radioactivity
+this.on_configuration_changed = whitelist_radioactivity
 
 return this
